@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Men's Active Navy</title>
+    <link rel="shortcut icon" href="img/faicone.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="css/singlepage.css" />
+    <!-- Icone Css -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- swipeer js cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Aos animationi  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body onload="loading2()">
+    <!-- Preloading effect -->
+    <!-- <div class="lds-roller" id="lds-roller"></div> -->
+    <div class="lds-roller" id="lds-roller2"></div>
+
+    <!-- Top Header Bar -->
+    <div class="top_header">
+        <div class="swiper mySwiper top_balck_header box_shadow">
+            <div class="swiper-wrapper contant_slide">
+                <div class="swiper-slide">
+                    <span>Shop for Rs 2499/- &amp; get 10% OFF</span>
+                    <span class="sec_span">Use Code: SHOP10</span>
+                </div>
+                <div class="swiper-slide">
+                    <span>Shop for Rs 3999/- &amp; Get FLAT 15% OFF</span>
+                    <span class="sec_span">Use Code: SHOP15</span>
+                </div>
+                <div class="swiper-slide">
+                    <span>flat 25% off | USE CODE: FINALCALL</span>
+                    <span class="sec_span"><a href="#">CLICK HERE</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav Sction Start -->
+    <div class="nav_section nav_section_sticky" id="nav_section">
+        <div class="page_width">
+            <div class="nav_flex_item">
+                <div class="menu_bar">
+                    <i class="ri-menu-2-fill bicon"></i>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/snichWhite.png" alt="logo" class="whiteimg" />
+                        <img src="img/_New Snitch logo.png" alt="logo" class="balckimg" />
+                    </a>
+                </div>
+                <div class="nav_link_site">
+                    <div class="link_icone hidesoicone">
+                        <a href="contact.html">
+                            <i class="ri-user-3-line bicon"></i>
+                        </a>
+                    </div>
+                    <div class="link_icone">
+                        <i class="ri-search-line  search-bar bicon"></i>
+                    </div>
+                    <div class="link_icone hidesoicone wislbag">
+                        <i class="ri-heart-line bicon wish_cart" style="color: #e30d23 !important;"></i>
+                        <span id="count1">0</span>
+                    </div>
+                    <div class="link_icone ">
+                        <i class="ri-camera-line bicon camera-search"></i>
+                    </div>
+                    <div class="link_icone shopping-bag cart">
+                        <i class="ri-shopping-bag-line bicon"></i><span id="count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- nav small screen  -->
+    <div class="nav_link_site_small">
+        <div class="link_icone">
+            <a href="contact.html">
+                <i class="fa-sharp fa-solid fa-user"></i>
+                <p>Account</p>
+            </a>
+        </div>
+        <div class="link_icone">
+            <a href="index.html">
+                <i class="ri-layout-grid-fill"></i>
+                <p>Collections</p>
+            </a>
+        </div>
+        <div class="link_icone">
+            <a href="shop.html">
+                <i class="fa-solid fa-light fa-shirt"></i>
+                <p>New Arrival</p>
+            </a>
+        </div>
+        <div class="link_icone ">
+            <div>
+                <i class="fa-sharp fa-solid fa-heart" onclick="togglewishbtn()"></i>
+                <p>Wishlist</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Side bar Start -->
+    <div class="side_bar_section">
+        <div class="side_navBar">
+            <div class="navbar_menu">
+                <div class="fixed_header">
+                    <div>
+                        <a href="#"><i class="ri-user-3-line user"></i></a>
+                        <a href="#">LOG IN</a>
+                    </div>
+                    <i class="ri-close-line close" onclick=" toggleSidebar()"></i>
+                </div>
+                <div class="navbar_list">
+                    <ul class="nav_item_list">
+                        <li class="NavLink"><a href="#">new</a></li>
+                        <li class="NavLink">
+                            <div class="fdiv_flex">
+                                <a href="#">Shop</a>
+                                <a href="#"><i class="ri-arrow-down-s-line down_arrow"></i></a>
+                            </div>
+                            <div class="LinkList">
+                                <div class="Link_content_inner">
+                                    <ul class="mobile_nav_list">
+                                        <li class="mobile_nav_item">
+                                            <div class="flex_mobile_item">
+                                                <a href="#">Shirts</a>
+                                                <a href="#">
+                                                    <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('flist'),change('fistrow')" id="fistrow"></i></a>
+                                            </div>
+                                            <div class="LinkList_one" id="flist">
+                                                <div class="Link_content_inner_one">
+                                                    <ul class="mobile_nav_list_one">
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">Plain</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">Stripe</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">linen</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">Checks</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">printed</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">overshirt</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">oversized shirt</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">clubwear</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">floral</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">view all</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mobile_nav_item">
+                                            <div class="flex_mobile_item">
+                                                <a href="#">T-Shirts</a>
+                                                <a href="#"><i class="ri-arrow-down-s-line inner_arrow"
+                            onclick="Toggle('Slist'),change('secondrow')" id="secondrow"></i></a>
+                                            </div>
+                                            <div class="LinkList_one" id="Slist">
+                                                <div class="Link_content_inner_one">
+                                                    <ul class="mobile_nav_list_one">
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">Basics</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">polo</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">graphic printed</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">over sized</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">sleeveless</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">view all</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mobile_nav_item">
+                                            <div class="flex_mobile_item">
+                                                <a href="#">Jeans</a>
+                                                <a href="#"><i class="ri-arrow-down-s-line inner_arrow"
+                            onclick="Toggle('Tlist'),change('Threedrow')" id="Threedrow"></i></a>
+                                            </div>
+                                            <div class="LinkList_one" id="Tlist">
+                                                <div class="Link_content_inner_one">
+                                                    <ul class="mobile_nav_list_one">
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">skinny fit</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">boot cut</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">baggy fit</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">straight fit</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">slim fit</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mobile_nav_item"><a href="#">cargo</a></li>
+                                        <li class="mobile_nav_item">
+                                            <div class="flex_mobile_item">
+                                                <a href="#">bottom wear</a>
+                                                <a href="#">
+                                                    <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('fourlist'),change('fourrow')" id="fourrow"></i>
+                                                </a>
+                                            </div>
+                                            <div class="LinkList_one" id="fourlist">
+                                                <div class="Link_content_inner_one">
+                                                    <ul class="mobile_nav_list_one">
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">Chinos</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">formals</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">joggers</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">shorts</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mobile_nav_item">
+                                            <div class="flex_mobile_item">
+                                                <a href="#">lounge wear</a>
+                                                <a href="#">
+                                                    <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('fivelist'),change('Fivrow')" id="Fivrow"></i>
+                                                </a>
+                                            </div>
+                                            <div class="LinkList_one" id="fivelist">
+                                                <div class="Link_content_inner_one">
+                                                    <ul class="mobile_nav_list_one">
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">Boxers</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">innerwear</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">night suits & pyjamas</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mobile_nav_item">
+                                            <a href="#">co-Ords</a>
+                                        </li>
+                                        <li class="mobile_nav_item">
+                                            <a href="#">jackets</a>
+                                        </li>
+                                        <li class="mobile_nav_item">
+                                            <a href="#">hoodie's</a>
+                                        </li>
+                                        <li class="mobile_nav_item">
+                                            <a href="#">sweaters</a>
+                                        </li>
+                                        <li class="mobile_nav_item">
+                                            <div class="flex_mobile_item">
+                                                <a href="#">snitch plus</a>
+                                                <a href="#">
+                                                    <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('sixlist'),change('SixRow')" id="SixRow"></i>
+                                                </a>
+                                            </div>
+                                            <div class="LinkList_one" id="sixlist">
+                                                <div class="Link_content_inner_one">
+                                                    <ul class="mobile_nav_list_one">
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">Shirts</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">trousers</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">denim</a>
+                                                        </li>
+                                                        <li class="mobile_nav_item_one">
+                                                            <a href="#">shorts</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mobile_nav_item">
+                                            <a href="#">snitch luxe</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="NavLink"><a href="#">IN the spotlight</a></li>
+                        <li class="NavLink"><a href="#">Download App</a></li>
+                        <li class="NavLink"><a href="#">Track order</a></li>
+                        <li class="NavLink">
+                            <a href="#">place a return REquest</a>
+                        </li>
+                        <li class="NavLink"><a href="#">customer support</a></li>
+                        <li class="NavLink"><a href="#">Store location </a></li>
+                        <li class="NavLink"><a href="#">ReLove</a></li>
+                    </ul>
+                </div>
+                <div class="Nav_social_icon">
+                    <div class="s_icon">
+                        <a href="https://www.snitch.co.in/"><i class="ri-instagram-line"></i></a>
+                    </div>
+                    <div class="s_icon">
+                        <a href="https://www.snitch.co.in/"><i class="ri-facebook-circle-fill"></i></a>
+                    </div>
+                    <div class="s_icon">
+                        <a href="https://www.snitch.co.in/"><i class="ri-video-fill"></i></a>
+                    </div>
+                    <div class="s_icon">
+                        <a href="https://www.snitch.co.in/"><i class="ri-twitter-fill"></i></a>
+                    </div>
+                    <div class="s_icon">
+                        <a href="https://www.snitch.co.in/"><i class="ri-pinterest-fill"></i></a>
+                    </div>
+                    <div class="s_icon">
+                        <a href="https://www.snitch.co.in/"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Section Start -->
+    <div class="Cart_section">
+        <div class="Cart_side_menu">
+            <div class="cart_menu">
+                <div class="heading">
+                    <h2>Cart</h2>
+                    <i class="ri-close-line close" onclick="ToggleCartSection()"></i>
+                </div>
+                <div class="cart_contant" id="cartItem">
+                    <p class="cart_text">your cart is empty</p>
+                    <!-- <p>Your cart is currently empty.</p> -->
+                    <!-- <div class="cartproduct">
+            <div class="imagew">
+              <img src=${} alt="">
+            </div>
+            <h4>${}</h4>
+            <div class="qty">
+              <button><img src="img/qunty/plus.png"></button>
+              <button><img src="img/qunty/minus.png"></button>
+              <p>${}</p>
+              <button>-</button>
+            </div>
+            <p>${}</p>
+            <div class="btn_r">
+              <i class="ri-delete-bin-line"></i>
+            </div>
+          </div> -->
+                </div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">Rs. 0.00</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Section Start -->
+    <div class="Search_section">
+        <div class="Search_menu">
+            <div class="search_bar_flex">
+                <div class="search_bar">
+                    <a href="shop.html"><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></a>
+                    <input type="search" name="search" id="" placeholder="Search">
+                </div>
+                <div class="close_menu" onclick="toggleSearch()">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <div class="trending_product">
+                <p>Trending Products</p>
+                <div class="product_grid_item">
+                    <div class="pro_wrapper">
+                        <a href="shop.html">
+                            <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2449-02-M49.jpg?v=1695880735">
+                            <div class="pro-detail">
+                                <span class="title">Tencil Stripe Pink Shirt</span>
+                                <span class="price">Rs.1,199</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pro_wrapper">
+                        <a href="shop.html">
+                            <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2449-03-M26.jpg?v=1695983532">
+                            <div class="pro-detail">
+                                <span class="title">Tencil Stripe Navy Shirt</span>
+                                <span class="price">Rs.1,199</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pro_wrapper">
+                        <a href="shop.html">
+                            <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2449-04-M39.jpg?v=1695880979">
+                            <div class="pro-detail">
+                                <span class="title">Tencil Stripe Yellow Shirt</span>
+                                <span class="price">Rs.1,199</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pro_wrapper">
+                        <a href="shop.html">
+                            <img src="https://www.snitch.co.in/cdn/shop/files/4MSO4515-02-3255.jpg?v=1696008000">
+                            <div class="pro-detail">
+                                <span class="title">Sauvie Olive Cargo Pant</span>
+                                <span class="price">Rs.1,399</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pro_wrapper">
+                        <a href="shop.html">
+                            <img src="https://www.snitch.co.in/cdn/shop/products/Lazar_Oct16535.jpg?v=1668265593&width=120">
+                            <div class="pro-detail">
+                                <span class="title">Smushy Black Shirt</span>
+                                <span class="price">Rs.1,299</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pro_wrapper">
+                        <a href="shop.html">
+                            <img src="https://www.snitch.co.in/cdn/shop/products/SNITCH-JUNE1503.jpg?v=1655120022p">
+                            <div class="pro-detail">
+                                <span class="title">Aster White Shirt</span>
+                                <span class="price">Rs.799</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- camera section start -->
+    <div class="camera_section">
+        <div class="camera_search_menu">
+            <div class="title_contant">
+                <h3>Visual Search</h3>
+                <i class="fa-solid fa-x" onclick="toggleCamera()"></i>
+            </div>
+            <div class="main_contant">
+                <div class="left_menu">
+                    <div class="uploadImg">
+                        <div class="imgWrapper">
+                            <img src="img/serchCamera/image.svg" alt="">
+                        </div>
+                        <div class="step">
+                            <p>Step 1: Upload an image</p>
+                            <span>Take a photo or screenshot of your product inspiration and upload here.</span>
+                        </div>
+                    </div>
+                    <div class="uploadImg">
+                        <div class="imgWrapper">
+                            <img src="img/serchCamera/search.svg" alt="">
+                        </div>
+                        <div class="step">
+                            <p>Step 2: Find similar items</p>
+                            <span>We'll analyze your image and recommend similar products.</span>
+                        </div>
+                    </div>
+                    <div class="fileupload">
+                        <div class="filecontan">
+                            <input type="file" name="" id="file" accept="image/*" style="display: none;">
+                            <label for="file">
+                <img src="img/serchCamera/file.svg">
+                <p>Drag and drop or browse your file here</p>
+                <p>Maximum file size: 10mb</p>
+              </label>
+                            <label for="file" class="label2">Upload Image</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="right_menu">
+                    <p>Need inspiration? Try an image from our gallery:</p>
+                    <div class="grid_section">
+                        <div class="img-wrap">
+                            <a href="shop.html"><img src="img/serchCamera/produc/img1.webp"></a>
+                        </div>
+                        <div class="img-wrap">
+                            <a href="shop.html"><img src="img/serchCamera/produc/img2.webp"></a>
+                        </div>
+                        <div class="img-wrap">
+                            <a href="shop.html"><img src="img/serchCamera/produc/img3.webp"></a>
+                        </div>
+                        <div class="img-wrap">
+                            <a href="shop.html"><img src="img/serchCamera/produc/img4.webp"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WishList Section Start -->
+    <div class="wish_section">
+        <div class="wish_menu">
+            <div class="title_contant">
+                <h3>Wish List</h3>
+                <i class="fa-solid fa-x" onclick="togglewishbtn()"></i>
+            </div>
+            <div class="wishcontan" id="wishItem">
+                <p class="wishtext">your wishlist is empty</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Section Single Product Page  -->
+    <div id="main_Single_page">
+        <div class="page_width">
+            <div class="flex_wrapper">
+                <div class="image_Section_left">
+                    <div class="leftinner">
+                        <div class="small_left_Image" id="Acitve_img">
+                            <div class="small_img_wrapper">
+                                <img src="https://www.snitch.co.in/cdn/shop/products/f_0ee1d86b-a9a0-4954-980c-723af08dc43d_1000x1000.jpg?v=1691241562" alt="" class="small_Img active_img" />
+                            </div>
+                            <div class="small_img_wrapper">
+                                <img src="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53539_1000x1000.jpg?v=1691241562" alt="" class="small_Img" />
+                            </div>
+                            <div class="small_img_wrapper">
+                                <img src="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53513_1000x1000.jpg?v=1691241562" alt="" class="small_Img" />
+                            </div>
+                            <div class="small_img_wrapper">
+                                <img src="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53512_1000x1000.jpg?v=1670660083" alt="" class="small_Img" />
+                            </div>
+                            <div class="small_img_wrapper">
+                                <img src="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53505_1000x1000.jpg?v=1670660083" alt="" class="small_Img" />
+                            </div>
+                            <div class="small_img_wrapper">
+                                <img src="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53509_1000x1000.jpg?v=1670660083" alt="" class="small_Img" />
+                            </div>
+                            <div class="small_img_wrapper">
+                                <img src="https://www.snitch.co.in/cdn/shop/products/chemical-free-tag-final_842bb3ca-54a5-47ea-ae2f-c4f72b15ab02_1000x1000.jpg?v=1670660083" alt="" class="small_Img" />
+                            </div>
+                        </div>
+                        <div class="big_right_Image" id="sohaanImage">
+                            <img src="https://www.snitch.co.in/cdn/shop/products/f_0ee1d86b-a9a0-4954-980c-723af08dc43d_1000x1000.jpg?v=1691241562" alt="" id="MainImg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="Product_detail_Section_right">
+                    <div class="product_info">
+                        <div class="product_infor_first">
+                            <div class="Product_title">
+                                <h6>ACTIVE NAVY STRETCH PANTS</h6>
+                            </div>
+                            <div class="product_review_start">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <span>8 reviews</span>
+                            </div>
+                            <div class="price_product">
+                                <p>Rs. 1,499</p>
+                            </div>
+                            <div class="policey_payment_product">
+                                <p>
+                                    or 4 monthly payments of <strong>₹375</strong> with <img src="img/emi img/Logo.svg" alt="" class="emi_svg">&nbsp; &#63
+                                    <span class="gray_text">
+                    Credit card NOT required, Online approval in 2
+                    minutes</span>
+                                    <span class="red_text">Flat 15% cashback up to ₹1000.
+                  </span>
+                                    <u>T&C</u>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product_style_info">
+                            <div class="color_section">
+                                <p>COLOR</p>
+                                <span>Navy</span>
+                            </div>
+                            <div class="size_section">
+                                <p>SIZE</p>
+                                <div id="myDIV">
+                                    <button class="btn">30</button>
+                                    <button class="btn">32</button>
+                                    <button class="btn active">34</button>
+                                    <button class="btn">36</button>
+                                    <button class="btn">38</button>
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <p>quantity</p>
+                                <div class="quntity_inner">
+                                    <button class="plus-btn" type="button" name="button" onclick="decrementValue()">
+                    <img src="img/qunty/minus.png" alt="" />
+                  </button>
+                                    <input type="text" name="quantity" value="1" maxlength="2" size="1" id="number" max="10" />
+                                    <button class="minus-btn" type="button" name="button" onclick="incrementValue()">
+                    <img src="img/qunty/plusr.png" alt="" class="plucimg" />
+                  </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emi_section">
+                            <div class="femi" id="femi">
+                                <div class="femi_inner open_click">
+                                    <p>emi / pay in 3 offers</p>
+                                    <i class="ri-arrow-down-s-line click_change_arrow"></i>
+                                </div>
+                                <div class="emi_hide">
+                                    <p>Or 3 interest free payments of ₹499.68</p><img src="img/emi img/emi.jpg" alt="" class="emi_image">&nbsp; &#33
+                                    <p> <del> ₹1499</del> <span class="green_text">₹500</span> now and rest later in 2 interest free payments via <span class="green_text">SNITCHPAY</span></p><img src="img/emi img/info-icon.png" alt="" class="info_icon">
+                                </div>
+                            </div>
+                            <div class="femi offerfyou">
+                                <div class="femi_inner open_click1">
+                                    <p>Offers for you</p>
+                                    <i class="ri-arrow-down-s-line click_change_arrow1"></i>
+                                </div>
+                                <div class="emi_hide2">
+                                    <p>
+                                        <strong>Shop for Rs 2499/- & get 10% OFF</strong>
+                                        <span>Use Code: <strong>SHOP10</strong></span>
+                                    </p>
+                                    <p>
+                                        <strong>Shop for Rs 3999/- & get 15% OFF</strong>
+                                        <span>Use Code: <strong>SHOP15</strong></span>
+                                    </p>
+                                    <p>
+                                        <strong>FLAT 25% OFF on this collection</strong>
+                                        <span>Use Code: <strong>FINALCALL</strong></span>
+                                    </p>
+                                    &#128293;
+                                    <span class="bottom_Tex">
+                    Get faster delivery and save COD charges of ₹100/- on prepaid orders
+                  </span> &#128293;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-btn">
+                            <button type="button" class="hover-same">ADD TO CART</button>
+                        </div>
+                        <div class="wish-btn">
+                            <button type="button"><i class="ri-heart-line"></i> Add to Wishlist</button>
+                            <div class="tooltip">
+                                <span class="tooltiptext">Add to Wishlist</span>
+                            </div>
+                        </div>
+                        <di class="dilever_code">
+                            <p>Delivered by and COD Checker</p>
+                            <div class="wrapper">
+                                <form>
+                                    <input type="text" name="" id="" placeholder="Enter Pincode" required>
+                                    <button type="submit">CHECK</button>
+                                </form>
+                            </div>
+                        </di>
+                        <div class="description_item">
+                            <p>Wrinkle-Resistant, Easy-Care Stretch Cotton That Simplifies Your Work Day.</p>
+                            <p class="pro_title-des">PRODUCT DESCRIPTION</p>
+                            <ul>
+                                <li>4 Way Stretch</li>
+                                <li>Back Double Pocket</li>
+                                <li>Wrinkle Resistant</li>
+                                <li>Ankle Length</li>
+                            </ul>
+                            <p class="fite_section_des"><b>fit:</b><span>slime fit</span></p>
+                            <p class="fite_section_des"><b>FABRIC: </b><span>65% Cotton; 30% Polyester; 5% Spandex</span></p>
+                            <p class="fite_section_des"><b>SIZE: </b><span> Model is wearing a 30 size</span></p>
+                            <p class="fite_section_des"><b>Model Height: </b><span>6 Feet </span></p>
+                            <p class="fite_section_des"><b>WASH CARE: </b><span>Cold machine wash. For more details see the wash care
+                  label attached.</span></p>
+                            <p>Actual colour of the product may vary slightly due to photographic lighting sources or your device
+                            </p>
+                        </div>
+                    </div>
+                    <div class="table-info">
+                        <h4>Pants Size Guide</h4>
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th>Waist</th>
+                                <th>hip</th>
+                                <th>in seam</th>
+                                <th>out seam</th>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>30.5</td>
+                                <td>39</td>
+                                <td>29</td>
+                                <td>39</td>
+                            </tr>
+                            <tr>
+                                <td>32</td>
+                                <td>32.5</td>
+                                <td>41</td>
+                                <td>29</td>
+                                <td>39</td>
+                            </tr>
+                            <tr>
+                                <td>34</td>
+                                <td>34.5</td>
+                                <td>43</td>
+                                <td>29</td>
+                                <td>39</td>
+                            </tr>
+                            <tr>
+                                <td>36</td>
+                                <td>36.5</td>
+                                <td>45</td>
+                                <td>29</td>
+                                <td>39</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>38.5</td>
+                                <td>47</td>
+                                <td>29</td>
+                                <td>39</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Secound Section Proudct page  -->
+    <section class="click_menu_section">
+        <div class="page_width">
+            <div class="flex_click_menu" id="clickmenuback">
+                <div class="title_click_menu active-bg" onclick="toogleChangeMenu('box1')">
+                    <p>Manufacturer Details</p>
+                </div>
+                <div class="title_click_menu" onclick="toogleChangeMenu('box2')">
+                    <p>Returns Policy</p>
+                </div>
+                <div class="title_click_menu" onclick="toogleChangeMenu('box3')">
+                    <p>Place Return Request</p>
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="main_contant_box">
+                    <div class="inner_content_box" id="box1">
+                        <p><b>Manufactured & Marketed By:</b></p>
+                        <p>Snitch Apparels Pvt. Ltd.</p>
+                        <P>No.5/1,3rd Floor, Surana Arcade, 4th Cross, Lalbagh Road, K.S.Garden, Bangalore-560027</P>
+                        <p><b>Country of Origin:</b></p>
+                        <p>India</p>
+                    </div>
+                    <div class="inner_content_box" id="box2">
+                        <p>We offer 7 days hassle-free returns. Return Policies may vary based on products and promotions.</p>
+                        <p>1) Refunds for Prepaid orders would directly be initiated to source account and COD order will be refunded in the form of COUPON CODE ONLY</p>
+                        <P>2) Defective Products, Wrong Products or Damaged Products issue should be raised within 24 hrs of delivery
+                        </P>
+                        <p>3) All Orders wherein FREE Products included are not eligible for Return</p>
+                        <p>For more details on our Returns Policies, please <b>click here․</b></p>
+                    </div>
+                    <div class="inner_content_box" id="box3">
+                        <p>To place any Returns Request, <b>click here.</b></p>
+                    </div>
+                </div>
+                <div class="main_contant_box_show">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- product slider Section  -->
+    <section class="product_slider">
+        <div class="page_width">
+            <div class="title_text">
+                <h2>YOU MAY ALSO LIKE</h2>
+            </div>
+            <div class="swiper mySwiper3 slider-swipere">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Geovani_22ndNov52747.jpg?v=1691930124" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Black Stretch Pants</p>
+                                <p class="price_de">Rs. 1,399</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_29thNov22_58198.jpg?v=1672221321" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Plum Grey Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Geovani_22ndNov52815.jpg?v=1672221286" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Moss Green Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Geovani_22ndNov53106.jpg?v=1672221353" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Tan Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Geovani_22ndNov53450.jpg?v=1672221181" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Cream Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_29thNov22_58285.jpg?v=1672221337" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Black Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/bottom-no-tag7.jpg?v=1689686853" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Plum Grey Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_29thNov22_58234.jpg?v=1672221207" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Moss Green Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_July22_4042.jpg?v=1658899830" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Tan Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/sergie_dec1001734.jpg?v=1671170933" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Cream Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSR5024-07-326.jpg?v=1687366114" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Black Stretch Pants</p>
+                                <p class="price_de">Rs. 1,399</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4msd3600-01-3226.jpg?v=1689103741" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Plum Grey Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_Feb25_22_10366.jpg?v=1650380117" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Moss Green Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSR5019-01-3216.jpg?v=1683027852" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Tan Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_July22_3209.jpg?v=1658898869" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Cream Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSR5019-03-323.jpg?v=1683028471" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Black Stretch Pants</p>
+                                <p class="price_de">Rs. 1,399</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSR5024-06-321.jpg?v=1687365920" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Plum Grey Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Alexi41750.jpg?v=1669030437" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Moss Green Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSR5024-05-3211.jpg?v=1687365767" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Tan Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Mollick6133_80629ede-9c29-4fe9-a038-115a5f4aa8e3.jpg?v=1677309961" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Cream Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_April21_0911.jpg?v=1650378053" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Black Stretch Pants</p>
+                                <p class="price_de">Rs. 1,399</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSR5024-02-3252.jpg?v=1687365291" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Plum Grey Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_July22_3209.jpg?v=1658898869" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Moss Green Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSO4512-05-32168000.jpg?v=1686240994" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Tan Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                        <div class="inner_contante_product_swiper">
+                            <div class="image_wrapper">
+                                <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Augusto_1stMarch1937.jpg?v=1678889574" alt="">
+                            </div>
+                            <div class="description_detail">
+                                <p>Active Cream Stretch Pants</p>
+                                <p class="price_de">Rs. 1,499</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- small screen slider -->
+            <div class="small_screen_slider">
+                <div class="small_slider_contant">
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Geovani_22ndNov52747.jpg?v=1691930124" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Black Stretch Pants</p>
+                            <p class="price_de">Rs. 1,399</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_29thNov22_58198.jpg?v=1672221321" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Plum Grey Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Geovani_22ndNov52815.jpg?v=1672221286" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Moss Green Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Geovani_22ndNov53106.jpg?v=1672221353" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Tan Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Geovani_22ndNov53450.jpg?v=1672221181" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Cream Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_29thNov22_58285.jpg?v=1672221337" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Black Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/bottom-no-tag7.jpg?v=1689686853" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Plum Grey Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_29thNov22_58234.jpg?v=1672221207" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Moss Green Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_July22_4042.jpg?v=1658899830" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Tan Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/sergie_dec1001734.jpg?v=1671170933" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Cream Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSR5024-07-326.jpg?v=1687366114" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Black Stretch Pants</p>
+                            <p class="price_de">Rs. 1,399</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4msd3600-01-3226.jpg?v=1689103741" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Plum Grey Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_Feb25_22_10366.jpg?v=1650380117" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Moss Green Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSR5019-01-3216.jpg?v=1683027852" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Tan Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_July22_3209.jpg?v=1658898869" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Cream Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSR5019-03-323.jpg?v=1683028471" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Black Stretch Pants</p>
+                            <p class="price_de">Rs. 1,399</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSR5024-06-321.jpg?v=1687365920" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Plum Grey Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Alexi41750.jpg?v=1669030437" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Moss Green Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSR5024-05-3211.jpg?v=1687365767" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Tan Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Mollick6133_80629ede-9c29-4fe9-a038-115a5f4aa8e3.jpg?v=1677309961" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Cream Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_April21_0911.jpg?v=1650378053" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Black Stretch Pants</p>
+                            <p class="price_de">Rs. 1,399</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSR5024-02-3252.jpg?v=1687365291" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Plum Grey Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_July22_3209.jpg?v=1658898869" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Moss Green Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSO4512-05-32168000.jpg?v=1686240994" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Tan Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                    <div class="inner_contante_product_swiper">
+                        <div class="image_wrapper">
+                            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Augusto_1stMarch1937.jpg?v=1678889574" alt="">
+                        </div>
+                        <div class="description_detail">
+                            <p>Active Cream Stretch Pants</p>
+                            <p class="price_de">Rs. 1,499</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- product list second Section -->
+    <section class="product_sec_list">
+        <div class="page_width">
+            <div class="title_text">
+                <h2>RECENTLY VIEWED</h2>
+            </div>
+            <div class="flex_product_wrapper">
+                <div class="flex_product_inner_wrap">
+                    <div class="image_wrapper">
+                        <a href="shop.html">
+                            <img src="https://www.snitch.co.in/cdn/shop/products/Mollick6133_80629ede-9c29-4fe9-a038-115a5f4aa8e3_360x.jpg?v=1677309961" alt="">
+                        </a>
+                    </div>
+                    <div class="title-des">
+                        <p>Tyler Navy Chino</p>
+                    </div>
+                </div>
+                <div class="flex_product_inner_wrap">
+                    <div class="image_wrapper">
+                        <a href="shop.html">
+                            <img src="https://www.snitch.co.in/cdn/shop/files/NOTAG-080-POLO-M11042_360x.jpg?v=1687347611" alt="">
+                        </a>
+                    </div>
+                    <div class="title-des">
+                        <p>White Polo T-Shirt</p>
+                    </div>
+                </div>
+                <div class="flex_product_inner_wrap">
+                    <div class="image_wrapper">
+                        <a href="shop.html">
+                            <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2034-32-M2_360x.jpg?v=1687947775" alt="">
+                        </a>
+                    </div>
+                    <div class="title-des">
+                        <p>Desing White Embroidery Shirt</p>
+                    </div>
+                </div>
+                <div class="flex_product_inner_wrap">
+                    <div class="image_wrapper">
+                        <a href="shop.html">
+                            <img src="https://www.snitch.co.in/cdn/shop/files/4MSN1345-13-SHIRT-M23_fa1bbe0e-3914-449e-98f2-f541cf20baa6_360x.jpg?v=1687332529" alt="">
+                        </a>
+                    </div>
+                    <div class="title-des">
+                        <p>Soft-Hue Khaki Shirt</p>
+                    </div>
+                </div>
+                <div class="flex_product_inner_wrap">
+                    <div class="image_wrapper">
+                        <a href="shop.html">
+                            <img src="https://www.snitch.co.in/cdn/shop/files/4MSD3604-05-3249_360x.jpg?v=1690378591" alt="">
+                        </a>
+                    </div>
+                    <div class="title-des">
+                        <p>Zipper Pocket Skinny Jeans</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- product Reviews Section  -->
+    <section class="review_section">
+        <div class="page_width">
+            <div class="shadow">
+                <div class="title_text">
+                    <h2>PRODUCT REVIEWS</h2>
+                </div>
+                <div class="flex_wrap">
+                    <div class="start-r">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <span>5.00 out of 5</span>
+                        <p>Based on 9 reviews</p>
+                    </div>
+                    <div class="start_right_sec">
+                        <div class="inner_section_review">
+                            <div class="review_start">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <span class="yellow"></span>
+                            <span class="number_re">9</span>
+                        </div>
+                        <div class="inner_section_review">
+                            <div class="review_start">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line "></i>
+                            </div>
+                            <span class="yellow bg-w"></span>
+                            <span class="number_re">0</span>
+                        </div>
+                        <div class="inner_section_review">
+                            <div class="review_start">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <span class="yellow bg-w"></span>
+                            <span class="number_re">0</span>
+                        </div>
+                        <div class="inner_section_review">
+                            <div class="review_start">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <i class="ri-star-line"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <span class="yellow bg-w"></span>
+                            <span class="number_re">0</span>
+                        </div>
+                        <div class="inner_section_review">
+                            <div class="review_start">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <i class="ri-star-line"></i>
+                                <i class="ri-star-line"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <span class="yellow bg-w"></span>
+                            <span class="number_re">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow">
+                <div class="select_menu">
+                    <div class="select_m_inner">
+                        <select name="" id="">
+              <option value="">Most Recent</option>
+              <option value="Highest Rating">Highest Rating</option>
+              <option value="">Lowest Rating</option>
+              <option value="">Only Pectures</option>
+              <option value="">Pectures First </option>
+              <option value="">Videos First </option>
+              <option value="">Most Helpful</option>
+            </select>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow shadow-n">
+                <div class="main_boxes">
+                    <div class="flex-display" id="boxes1">
+                        <div class="inner_contanten_section">
+                            <div class="text_contant">
+                                <div class="start_sec">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <div class="user_deta">
+                                    <i class="ri-user-follow-fill"></i>
+                                    <span>Sohan Rajput</span>
+                                    <span class="verify_tex">Verified</span>
+                                </div>
+                                <div class="comment">
+                                    <p>Good <span>Good</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner_contanten_section">
+                            <div class="text_contant">
+                                <div class="start_sec">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <div class="user_deta">
+                                    <i class="ri-user-follow-fill"></i>
+                                    <span>Ravi Tiwari </span>
+                                    <span class="verify_tex">Verified</span>
+                                </div>
+                                <div class="comment">
+                                    <p>Good Fit. Nice Quality.
+                                        <span>Good Fit. Nice Quality.
+                      If strechability can be added to the waist.. then nothing like it.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner_contanten_section">
+                            <div class="text_contant">
+                                <div class="start_sec">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <div class="user_deta">
+                                    <i class="ri-user-follow-fill"></i>
+                                    <span>MANZAR HUSSAIN</span>
+                                    <span class="verify_tex">Verified</span>
+                                </div>
+                                <div class="comment">
+                                    <p>Good quality and good stuff
+                                        <span>I am giving 5 star because of quality of the product and comfortable</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner_contanten_section">
+                            <div class="text_contant">
+                                <div class="start_sec">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <div class="user_deta">
+                                    <i class="ri-user-follow-fill"></i>
+                                    <span>mahesh nandimata</span>
+                                    <span class="verify_tex">Verified</span>
+                                </div>
+                                <div class="comment">
+                                    <p>Active Navy Stretch Pants
+                                        <span>Very nice product. Liked it. But snitch support is worst after selecting in shark tank. App is
+                      also worst. Previous app was best.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner_contanten_section">
+                            <div class="text_contant">
+                                <div class="start_sec">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <div class="user_deta">
+                                    <i class="ri-user-follow-fill"></i>
+                                    <span>Vivekananda Giri</span>
+                                    <span class="verify_tex">Verified</span>
+                                </div>
+                                <div class="comment">
+                                    <p>Great fit and awesome fabric.
+                                        <span>Great fit and awesome fabric.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-display" id="boxes2">
+                        <div class="inner_contanten_section">
+                            <div class="text_contant">
+                                <div class="start_sec">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <div class="user_deta">
+                                    <i class="ri-user-follow-fill"></i>
+                                    <span>Dharmesh M </span>
+                                    <span class="verify_tex">Verified</span>
+                                </div>
+                                <div class="comment">
+                                    <p>Nice<span>Value for money</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner_contanten_section">
+                            <div class="text_contant">
+                                <div class="start_sec">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <div class="user_deta">
+                                    <i class="ri-user-follow-fill"></i>
+                                    <span>harsha vardhan </span>
+                                    <span class="verify_tex">Verified</span>
+                                </div>
+                                <div class="comment">
+                                    <p>Great fit
+                                        <span>Great fit</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner_contanten_section">
+                            <div class="text_contant">
+                                <div class="start_sec">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <div class="user_deta">
+                                    <i class="ri-user-follow-fill"></i>
+                                    <span>Avinash Kumar Yadav</span>
+                                    <span class="verify_tex">Verified</span>
+                                </div>
+                                <div class="comment">
+                                    <p>Awesome product
+                                        <span>good fabric and nice fitting, very comfortable,</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner_contanten_section">
+                            <div class="text_contant">
+                                <div class="start_sec">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <div class="user_deta">
+                                    <i class="ri-user-follow-fill"></i>
+                                    <span>Prateek Sharma </span>
+                                    <span class="verify_tex">Verified</span>
+                                </div>
+                                <div class="comment">
+                                    <p>Awsome Product!!
+                                        <span>VSuperb stretch pant !! 🔥</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_boxes_show">
+
+                </div>
+                <div class="click-menu">
+                    <span onclick="ShowReview('boxes1')" class="clickbtn mohan" id="onepage">1</span>
+                    <span onclick="ShowReview('boxes2')" class="clickbtn" id="twopage">2</span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- image Model  -->
+    <div class="imageModel" id="imageModal">
+        <!-- Swiper -->
+        <div class="swiper2 mySwiper2 innermodel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://www.snitch.co.in/cdn/shop/products/f_0ee1d86b-a9a0-4954-980c-723af08dc43d_1000x1000.jpg?v=1691241562" target="_blank">
+                        <img src="https://www.snitch.co.in/cdn/shop/products/f_0ee1d86b-a9a0-4954-980c-723af08dc43d_1000x1000.jpg?v=1691241562" alt="" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53539_1000x1000.jpg?v=1691241562" target="_blank">
+                        <img src="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53539_1000x1000.jpg?v=1691241562" alt="" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53513_1000x1000.jpg?v=1691241562" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53513_1000x1000.jpg?v=1691241562" alt="" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53512_1000x1000.jpg?v=1670660083" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53512_1000x1000.jpg?v=1670660083" alt="" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53505_1000x1000.jpg?v=1670660083" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53505_1000x1000.jpg?v=1670660083" alt="" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53509_1000x1000.jpg?v=1670660083" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.snitch.co.in/cdn/shop/products/Geovani_22ndNov53509_1000x1000.jpg?v=1670660083" alt="" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.snitch.co.in/cdn/shop/products/chemical-free-tag-final_842bb3ca-54a5-47ea-ae2f-c4f72b15ab02_1000x1000.jpg?v=1670660083" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.snitch.co.in/cdn/shop/products/chemical-free-tag-final_842bb3ca-54a5-47ea-ae2f-c4f72b15ab02_1000x1000.jpg?v=1670660083" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <span class="swiper-close-icon" onclick="imageModelopen()"><i class="ri-close-line"></i></span>
+        </div>
+    </div>
+
+    <!-- Footer Section Start  -->
+    <div id="Footer-section">
+        <div class="page_width">
+            <footer>
+                <div class="flex_footer_div">
+                    <div class="footer_contant1">
+                        <ul>
+                            <li><a href="#">flagship store now open</a></li>
+                            <li><a href="#">bangalore: get Directions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_contant2">
+                        <ul>
+                            <li><a href="#">cantact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_contant3">
+                        <ul>
+                            <li><a href="#">Place Returns request </a></li>
+                            <li><a href="#">Returns policy</a></li>
+                            <li><a href="#">Track your order</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_contant4">
+                        <ul>
+                            <li><a href="#">Customer Care</a></li>
+                            <li><a href="#">timings: 10 Am - 6:00 PM (Mon-Sat)</a></li>
+                            <li title="6354728270"><a href="#">Call: +91 6354728270</a></li>
+                            <li title="Sohan@gmail.com">
+                                <a href="#">E-mail: Sohan@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_sec_contant">
+                    <h4 class="open_click_footer">Sign up and save</h4>
+                    <div class="hide-footer">
+                        <p>
+                            sign up now and be the first to know about exclusive offers, latest fashion trends & style tips!
+                        </p>
+                        <div class="input_div">
+                            <form>
+                                <input type="email" placeholder="Enter your email " required />
+                                <input type="submit" value="subscribe" />
+                            </form>
+                        </div>
+                        <div class="social_icon">
+                            <a href="https://www.snitch.co.in/"><i class="ri-instagram-line"></i></a>
+                            <a href="https://www.snitch.co.in/"><i class="ri-facebook-circle-fill"></i></a>
+                            <a href="https://www.snitch.co.in/"><i class="ri-video-fill"></i></a>
+                            <a href="https://www.snitch.co.in/"><i class="ri-twitter-fill"></i></a>
+                            <a href="https://www.snitch.co.in/"><i class="ri-pinterest-fill"></i></a>
+                            <a href="https://www.snitch.co.in/"><i class="ri-linkedin-fill"></i></a>
+                        </div>
+                    </div>
+                    <p class="footer_text">© 2023 SNITCH | All Rights Reserved</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- corner btn -->
+    <a href="#"><button class="corner-btn"><i class="ri-arrow-up-s-line"></i></button></a>
+
+
+    <!-- main js  -->
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/shop.js"></script>
+    <script src="JavaScript/singlepage.js"></script>
+
+    <script>
+        // <!-- openclick_menu_Review-section -->
+        let mainBoxesShow = document.querySelector(".main_boxes_show");
+        let one = document.getElementById('onepage')
+        let two = document.getElementById('twopage')
+
+        mainBoxesShow.innerHTML = document.getElementById('boxes1').innerHTML
+
+        function ShowReview(Id) {
+            let mainDiv = document.getElementById(Id);
+            mainBoxesShow.innerHTML = mainDiv.innerHTML
+
+            if (Id == 'boxes1') {
+                one.classList.add('mohan')
+                two.classList.remove('mohan')
+            } else {
+                two.classList.add('mohan')
+                one.classList.remove('mohan')
+            }
+        }
+    </script>
+
+    <!-- swiper js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // model image section swiper2
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            effect: "flip",
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper3", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- preloading effect  -->
+    <script>
+        // let ldsRoller = document.getElementById('lds-roller');
+
+        // function loading() {
+        //   ldsRoller.style.display = "none";
+        // }
+        let ldsRoller2 = document.getElementById("lds-roller2");
+
+        function loading2() {
+            ldsRoller2.style.display = "none";
+        }
+    </script>
+
+    <!-- quantity section incre and decre -->
+    <script>
+        function incrementValue() {
+            var value = parseInt(document.getElementById("number").value, 10);
+            value = isNaN(value) ? 0 : value;
+            if (value < 10) {
+                value++;
+                document.getElementById("number").value = value;
+            }
+        }
+
+        function decrementValue() {
+            var value = parseInt(document.getElementById("number").value, 10);
+            value = isNaN(value) ? 0 : value;
+            if (value > 1) {
+                value--;
+                document.getElementById("number").value = value;
+            }
+        }
+
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+        // Add active class to the current Image  (highlight it)
+        var Acitve_img = document.getElementById("Acitve_img");
+        var Small_images = Acitve_img.getElementsByClassName("small_Img");
+        for (var i = 0; i < Small_images.length; i++) {
+            Small_images[i].addEventListener("click", function() {
+                var current1 = document.getElementsByClassName("active_img");
+                current1[0].className = current1[0].className.replace(
+                    " active_img",
+                    ""
+                );
+                this.className += " active_img";
+            });
+        }
+
+
+        // MainIMage chage section
+
+        const sohaanImage = document.getElementById("sohaanImage");
+        const small_Img = document.getElementsByClassName("small_Img");
+        // const MainImg = document.getElementById('MainImg');
+
+        small_Img[0].onclick = function() {
+            sohaanImage.innerHTML = `
+          <img src="${small_Img[0].src}" data-aos = 'fade-left' alt="" id="MainImg" />
+    `;
+        };
+        small_Img[1].onclick = function() {
+            sohaanImage.innerHTML = `
+       <img src="${small_Img[1].src}" data-aos = 'fade-left' alt="" id="MainImg" />
+    `;
+        };
+        small_Img[2].onclick = function() {
+            sohaanImage.innerHTML = `
+      <img src="${small_Img[2].src}" data-aos = 'fade-left' alt="" id="MainImg" />
+      `;
+        };
+        small_Img[3].onclick = function() {
+            sohaanImage.innerHTML = `
+      <img src="${small_Img[3].src}" data-aos = 'fade-left' alt="" id="MainImg" />
+      `;
+        };
+        small_Img[4].onclick = function() {
+            sohaanImage.innerHTML = `
+      <img src="${small_Img[4].src}" data-aos = 'fade-left' alt="" id="MainImg" />
+      `;
+        };
+        small_Img[5].onclick = function() {
+            sohaanImage.innerHTML = `
+      <img src="${small_Img[5].src}" data-aos = 'fade-left' alt="" id="MainImg" />
+      `;
+        };
+        small_Img[6].onclick = function() {
+            sohaanImage.innerHTML = `
+      <img src="${small_Img[6].src}" data-aos = 'fade-left' alt="" id="MainImg" />
+      `;
+        };
+
+        // Menu Bar Open and Close
+        const openClick = document.querySelector(".open_click");
+        const open_click1 = document.querySelector(".open_click1");
+        const clickChangeArrow = document.querySelector(".click_change_arrow");
+        const clickChangeArrow1 = document.querySelector(".click_change_arrow1");
+        const emiHide = document.querySelector(".emi_hide");
+        const emiHide2 = document.querySelector(".emi_hide2");
+
+        openClick.addEventListener("click", () => clickOpen())
+
+        const clickOpen = () => {
+            emiHide.classList.toggle("emi_hide_show");
+            clickChangeArrow.classList.toggle("ri-arrow-up-s-line");
+        }
+        open_click1.addEventListener("click", () => clickOpen1())
+
+        // menu 2 open close
+
+        const clickOpen1 = () => {
+            emiHide2.classList.toggle("emi_hide2_show");
+            clickChangeArrow1.classList.toggle("ri-arrow-up-s-line");
+        }
+
+        // image model open close
+        const sohaanImage1 = document.getElementById("sohaanImage");
+        const imageModal = document.getElementById("imageModal");
+
+        sohaanImage1.addEventListener("click", () => imageModelopen())
+
+        const imageModelopen = () => {
+            imageModal.classList.toggle("imageModel_show");
+            document.body.classList.toggle("bodyoverflowh");
+        };
+    </script>
+
+
+    <script>
+        // <!-- openclick_menu_menufacring-section -->
+        var main_contant_box_show = document.querySelector(".main_contant_box_show");
+
+        main_contant_box_show.innerHTML = document.getElementById("box1").innerHTML
+
+        function toogleChangeMenu(id) {
+            let menuDiv = document.getElementById(id);
+            main_contant_box_show.innerHTML = menuDiv.innerHTML
+        }
+        // <!-- openclick_menu_review-section -->
+
+        // Add active class to the current background (highlight it)
+        var clickMenuBack = document.getElementById("clickmenuback");
+        var titleClicMenu = clickMenuBack.getElementsByClassName("title_click_menu");
+        for (var i = 0; i < titleClicMenu.length; i++) {
+            titleClicMenu[i].addEventListener("click", function() {
+                var currentactive = document.getElementsByClassName("active-bg");
+                currentactive[0].className = currentactive[0].className.replace(" active-bg", "");
+                this.className += " active-bg";
+            });
+        }
+    </script>
+
+    <!-- aso animation cdn -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

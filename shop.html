@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buy Product</title>
+  <link rel="shortcut icon" href="img/faicone.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <!-- Icone Css -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- swipeer js cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- aos animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body onload="loading2()">
+  <!-- Preloading effect -->
+  <!-- <div class="lds-roller" id="lds-roller"></div> -->
+  <div class="lds-roller" id="lds-roller2"></div>
+  <!-- Top Header Bar -->
+  <div class="top_header">
+    <div class="swiper mySwiper top_balck_header box_shadow">
+      <div class="swiper-wrapper contant_slide">
+        <div class="swiper-slide">
+          <span>Shop for Rs 2499/- &amp; get 10% OFF</span>
+          <span class="sec_span">Use Code: SHOP10</span>
+        </div>
+        <div class="swiper-slide">
+          <span>Shop for Rs 3999/- &amp; Get FLAT 15% OFF</span>
+          <span class="sec_span">Use Code: SHOP15</span>
+        </div>
+        <div class="swiper-slide">
+          <span>flat 25% off | USE CODE: FINALCALL</span>
+          <span class="sec_span"><a href="#">CLICK HERE</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Nav Sction Start -->
+  <div class="nav_section nav_section_sticky" id="nav_section">
+    <div class="page_width">
+      <div class="nav_flex_item">
+        <div class="menu_bar">
+          <i class="ri-menu-2-fill bicon"></i>
+        </div>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/snichWhite.png" alt="logo" class="whiteimg" />
+            <img src="img/_New Snitch logo.png" alt="logo" class="balckimg" />
+          </a>
+        </div>
+        <div class="nav_link_site">
+          <div class="link_icone hidesoicone">
+            <a href="contact.html">
+              <i class="ri-user-3-line bicon"></i>
+            </a>
+          </div>
+          <div class="link_icone">
+            <i class="ri-search-line  search-bar bicon"></i>
+          </div>
+          <div class="link_icone hidesoicone wislbag">
+            <i class="ri-heart-line bicon wish_cart" style="color: #e30d23 !important;"></i>
+            <span id="count1">0</span>
+          </div>
+          <div class="link_icone ">
+            <i class="ri-camera-line bicon camera-search"></i>
+          </div>
+          <div class="link_icone shopping-bag cart">
+            <i class="ri-shopping-bag-line bicon"></i><span id="count">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav small screen  -->
+
+  <div class="nav_link_site_small">
+    <div class="link_icone">
+      <a href="contact.html">
+        <i class="fa-sharp fa-solid fa-user"></i>
+        <p>Account</p>
+      </a>
+    </div>
+    <div class="link_icone">
+      <a href="index.html">
+        <i class="ri-layout-grid-fill"></i>
+        <p>Collections</p>
+      </a>
+    </div>
+    <div class="link_icone">
+      <a href="shop.html">
+        <i class="fa-solid fa-light fa-shirt"></i>
+        <p>New Arrival</p>
+      </a>
+    </div>
+    <div class="link_icone linkspan">
+      <div>
+        <i class="fa-sharp fa-solid fa-heart wish_cart" onclick="togglewishbtn()"></i>
+        <span id="count2">0</span>
+        <p>Wishlist</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Side bar Start -->
+  <div class="side_bar_section">
+    <div class="side_navBar">
+      <div class="navbar_menu">
+        <div class="fixed_header">
+          <div>
+            <a href="#"><i class="ri-user-3-line user"></i></a>
+            <a href="#">LOG IN</a>
+          </div>
+          <i class="ri-close-line close" onclick="toggleSidebar()"></i>
+        </div>
+        <div class="navbar_list">
+          <ul class="nav_item_list">
+            <li class="NavLink"><a href="#">new</a></li>
+            <li class="NavLink">
+              <div class="fdiv_flex">
+                <a href="#">Shop</a>
+                <a href="#"><i class="ri-arrow-down-s-line down_arrow"></i></a>
+              </div>
+              <div class="LinkList">
+                <div class="Link_content_inner">
+                  <ul class="mobile_nav_list">
+                    <li class="mobile_nav_item">
+                      <div class="flex_mobile_item">
+                        <a href="#">Shirts</a>
+                        <a href="#">
+                          <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('flist'),change('fistrow')"
+                            id="fistrow"></i></a>
+                      </div>
+                      <div class="LinkList_one" id="flist">
+                        <div class="Link_content_inner_one">
+                          <ul class="mobile_nav_list_one">
+                            <li class="mobile_nav_item_one"><a href="#">Plain</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">Stripe</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">linen</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">Checks</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">printed</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">overshirt</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">oversized shirt</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">clubwear</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">floral</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">view all</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <div class="flex_mobile_item">
+                        <a href="#">T-Shirts</a>
+                        <a href="#"><i class="ri-arrow-down-s-line inner_arrow"
+                            onclick="Toggle('Slist'),change('secondrow')" id="secondrow"></i></a>
+                      </div>
+                      <div class="LinkList_one" id="Slist">
+                        <div class="Link_content_inner_one">
+                          <ul class="mobile_nav_list_one">
+                            <li class="mobile_nav_item_one"><a href="#">Basics</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">polo</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">graphic printed</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">over sized</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">sleeveless</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">view all</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <div class="flex_mobile_item">
+                        <a href="#">Jeans</a>
+                        <a href="#"><i class="ri-arrow-down-s-line inner_arrow"
+                            onclick="Toggle('Tlist'),change('Threedrow')" id="Threedrow"></i></a>
+                      </div>
+                      <div class="LinkList_one" id="Tlist">
+                        <div class="Link_content_inner_one">
+                          <ul class="mobile_nav_list_one">
+                            <li class="mobile_nav_item_one"><a href="#">skinny fit</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">boot cut</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">baggy fit</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">straight fit</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">slim fit</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mobile_nav_item"><a href="#">cargo</a></li>
+                    <li class="mobile_nav_item">
+                      <div class="flex_mobile_item">
+                        <a href="#">bottom wear</a>
+                        <a href="#">
+                          <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('fourlist'),change('fourrow')"
+                            id="fourrow"></i>
+                        </a>
+                      </div>
+                      <div class="LinkList_one" id="fourlist">
+                        <div class="Link_content_inner_one">
+                          <ul class="mobile_nav_list_one">
+                            <li class="mobile_nav_item_one"><a href="#">Chinos</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">formals</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">joggers</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">shorts</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <div class="flex_mobile_item">
+                        <a href="#">lounge wear</a>
+                        <a href="#">
+                          <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('fivelist'),change('Fivrow')"
+                            id="Fivrow"></i>
+                        </a>
+                      </div>
+                      <div class="LinkList_one" id="fivelist">
+                        <div class="Link_content_inner_one">
+                          <ul class="mobile_nav_list_one">
+                            <li class="mobile_nav_item_one"><a href="#">Boxers</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">innerwear</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">night suits & pyjamas</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <a href="#">co-Ords</a>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <a href="#">jackets</a>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <a href="#">hoodie's</a>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <a href="#">sweaters</a>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <div class="flex_mobile_item">
+                        <a href="#">snitch plus</a>
+                        <a href="#">
+                          <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('sixlist'),change('SixRow')"
+                            id="SixRow"></i>
+                        </a>
+                      </div>
+                      <div class="LinkList_one" id="sixlist">
+                        <div class="Link_content_inner_one">
+                          <ul class="mobile_nav_list_one">
+                            <li class="mobile_nav_item_one"><a href="#">Shirts</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">trousers</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">denim</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">shorts</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <a href="#">snitch luxe</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="NavLink"><a href="#">IN the spotlight</a></li>
+            <li class="NavLink"><a href="#">Download App</a></li>
+            <li class="NavLink"><a href="#">Track order</a></li>
+            <li class="NavLink">
+              <a href="#">place a return REquest</a>
+            </li>
+            <li class="NavLink"><a href="#">customer support</a></li>
+            <li class="NavLink"><a href="#">Store location </a></li>
+            <li class="NavLink"><a href="#">ReLove</a></li>
+          </ul>
+        </div>
+        <div class="Nav_social_icon">
+          <div class="s_icon">
+            <a href="https://www.snitch.co.in/"><i class="ri-instagram-line"></i></a>
+          </div>
+          <div class="s_icon">
+            <a href="https://www.snitch.co.in/"><i class="ri-facebook-circle-fill"></i></a>
+          </div>
+          <div class="s_icon">
+            <a href="https://www.snitch.co.in/"><i class="ri-video-fill"></i></a>
+          </div>
+          <div class="s_icon">
+            <a href="https://www.snitch.co.in/"><i class="ri-twitter-fill"></i></a>
+          </div>
+          <div class="s_icon">
+            <a href="https://www.snitch.co.in/"><i class="ri-pinterest-fill"></i></a>
+          </div>
+          <div class="s_icon">
+            <a href="https://www.snitch.co.in/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cart Section Start -->
+  <div class="Cart_section">
+    <div class="Cart_side_menu">
+      <div class="cart_menu">
+        <div class="heading">
+          <h2>Cart</h2>
+          <i class="ri-close-line close" onclick="ToggleCartSection()"></i>
+        </div>
+        <div class="cart_contant" id="cartItem">
+          <p class="cart_text">your cart is empty</p>
+        </div>
+        <div class="foot">
+          <h3>Subtotal</h3>
+          <h2 id="total">Rs. 0.00</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Search Section Start -->
+  <div class="Search_section">
+    <div class="Search_menu">
+      <div class="search_bar_flex">
+        <div class="search_bar">
+          <a href="shop.html"><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></a>
+          <input type="search" name="search" id="" placeholder="Search">
+        </div>
+        <div class="close_menu" onclick="toggleSearch()">
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
+      <div class="trending_product">
+        <p>Trending Products</p>
+        <div class="product_grid_item">
+          <div class="pro_wrapper">
+            <a href="shop.html">
+              <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2449-02-M49.jpg?v=1695880735">
+              <div class="pro-detail">
+                <span class="title">Tencil Stripe Pink Shirt</span>
+                <span class="price">Rs.1,199</span>
+              </div>
+            </a>
+          </div>
+          <div class="pro_wrapper">
+            <a href="shop.html">
+              <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2449-03-M26.jpg?v=1695983532">
+              <div class="pro-detail">
+                <span class="title">Tencil Stripe Navy Shirt</span>
+                <span class="price">Rs.1,199</span>
+              </div>
+            </a>
+          </div>
+          <div class="pro_wrapper">
+            <a href="shop.html">
+              <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2449-04-M39.jpg?v=1695880979">
+              <div class="pro-detail">
+                <span class="title">Tencil Stripe Yellow Shirt</span>
+                <span class="price">Rs.1,199</span>
+              </div>
+            </a>
+          </div>
+          <div class="pro_wrapper">
+            <a href="shop.html">
+              <img src="https://www.snitch.co.in/cdn/shop/files/4MSO4515-02-3255.jpg?v=1696008000">
+              <div class="pro-detail">
+                <span class="title">Sauvie Olive Cargo Pant</span>
+                <span class="price">Rs.1,399</span>
+              </div>
+            </a>
+          </div>
+          <div class="pro_wrapper">
+            <a href="shop.html">
+              <img src="https://www.snitch.co.in/cdn/shop/products/Lazar_Oct16535.jpg?v=1668265593&width=120">
+              <div class="pro-detail">
+                <span class="title">Smushy Black Shirt</span>
+                <span class="price">Rs.1,299</span>
+              </div>
+            </a>
+          </div>
+          <div class="pro_wrapper">
+            <a href="shop.html">
+              <img src="https://www.snitch.co.in/cdn/shop/products/SNITCH-JUNE1503.jpg?v=1655120022p">
+              <div class="pro-detail">
+                <span class="title">Aster White Shirt</span>
+                <span class="price">Rs.799</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Bar section  -->
+  <div class="searchbar_section">
+    <div class="page_width">
+      <div class="search_bar">
+        <button onclick="Search_Display()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="search" name="" id="searchInput" placeholder="Search for product in this collection" autofocus>
+      </div>
+    </div>
+  </div>
+
+  <!-- camera section start -->
+  <div class="camera_section">
+    <div class="camera_search_menu">
+      <div class="title_contant">
+        <h3>Visual Search</h3>
+        <i class="fa-solid fa-x" onclick="toggleCamera()"></i>
+      </div>
+      <div class="main_contant">
+        <div class="left_menu">
+          <div class="uploadImg">
+            <div class="imgWrapper">
+              <img src="img/serchCamera/image.svg" alt="">
+            </div>
+            <div class="step">
+              <p>Step 1: Upload an image</p>
+              <span>Take a photo or screenshot of your product inspiration and upload here.</span>
+            </div>
+          </div>
+          <div class="uploadImg">
+            <div class="imgWrapper">
+              <img src="img/serchCamera/search.svg" alt="">
+            </div>
+            <div class="step">
+              <p>Step 2: Find similar items</p>
+              <span>We'll analyze your image and recommend similar products.</span>
+            </div>
+          </div>
+          <div class="fileupload">
+            <div class="filecontan">
+              <input type="file" name="" id="file" accept="image/*" style="display: none;">
+              <label for="file">
+                <img src="img/serchCamera/file.svg">
+                <p>Drag and drop or browse your file here</p>
+                <p>Maximum file size: 10mb</p>
+              </label>
+              <label for="file" class="label2">Upload Image</label>
+            </div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <div class="right_menu">
+          <p>Need inspiration? Try an image from our gallery:</p>
+          <div class="grid_section">
+            <div class="img-wrap">
+              <a href="shop.html"><img src="img/serchCamera/produc/img1.webp"></a>
+            </div>
+            <div class="img-wrap">
+              <a href="shop.html"><img src="img/serchCamera/produc/img2.webp"></a>
+            </div>
+            <div class="img-wrap">
+              <a href="shop.html"><img src="img/serchCamera/produc/img3.webp"></a>
+            </div>
+            <div class="img-wrap">
+              <a href="shop.html"><img src="img/serchCamera/produc/img4.webp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WishList Section Start -->
+  <div class="wish_section">
+    <div class="wish_menu">
+     <div class="title_contant">
+       <h3>Wish List</h3>
+       <i class="fa-solid fa-x" onclick="togglewishbtn()"></i>
+     </div>
+     <div class="wishcontan" id="wishItem">
+      <p class="wishtext">your wishlist is empty</p>
+     </div>
+    </div>
+ </div>
+
+  <!-- filter Section Start -->
+  <div class="filter_sectionn">
+    <div class="page_width">
+      <div class="main_filet_flex">
+        <div class="filter_menu" title="ClicK Here">
+          <div class="filter_btn">
+            <img src="img/filter icone/fileter.png" alt="" class="filtericone">
+            <button><a href="#">FILTER</a></button>
+          </div>
+          <div id="my_div_ac">
+            <div class="black_box layout_two">
+              <a href="#" class="box"><span></span></a>
+              <a href="#" class="box"><span></span></a>
+            </div>
+            <div class="black_box layout_three">
+              <a href="#" class="box"><span></span></a>
+              <a href="#" class="box"><span></span></a>
+              <a href="#" class="box"><span></span></a>
+            </div>
+            <div class="black_box layout_four black_box_active">
+              <a href="#" class="box box_active"><span></span></a>
+              <a href="#" class="box box_active"><span></span></a>
+              <a href="#" class="box box_active"><span></span></a>
+              <a href="#" class="box box_active"><span></span></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="short_By_custom_outr">
+          <div class="short_By_custom" onclick="shortIcone('short_icone')">
+            <img src="img/filter icone/shorted.png" alt="" class="shortdeicone">
+            <span class="shor_title_text">
+              <a href="#">Sort By <span> : Custom</span></a>
+            </span>
+            <span class="shor_title_icon">
+              <a href="#"><i class="ri-arrow-down-s-line" id="short_icone"></i></a>
+            </span>
+          </div>
+          <div class="shorBycustomhidebox">
+            <p>curated for you</p>
+            <p>Newly Added</p>
+            <p>Price (High to low)</p>
+            <p>Price (Low to High)</p>
+            <p>Discount (High to Low)</p>
+            <p>Custom</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  product section start  -->
+  <div id="product_section_page">
+    <div class="page_width " id="page_widht">
+      <div class=" filter_hide_show  ">
+        <i class="ri-close-line close filter_close_icone" onclick="togglefilterMenu()"></i>
+        <div class="filter_sideBar_menu ">
+          <div class="filter_sideBar_group">
+            <div class="filter_group_flex">
+              <p>Product type</p>
+              <p><i class="ri-arrow-down-s-line" onclick="Toggleopen('filter_Product_flist'),changeicon('filter_f1')"
+                  id="filter_f1"></i></p>
+            </div>
+            <div class="filter_producttype filter_producttype_acitve" id="filter_Product_flist">
+              <ul>
+                <li class="filter_producttype_item">
+                  <a href="#">
+                    <label>
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Shirts</span>
+                    <span class="small_text">(664)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">T-Shirts</span>
+                    <span class="small_text">(81)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Jeans</span>
+                    <span class="small_text">(64)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Pants</span>
+                    <span class="small_text">(47)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Co-ords</span>
+                    <span class="small_text">(32)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Joggers</span>
+                    <span class="small_text">(17)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Boxers</span>
+                    <span class="small_text">(13)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Shorts</span>
+                    <span class="small_text">(9)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Chinos</span>
+                    <span class="small_text">(8)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter_sideBar_group">
+            <div class="filter_group_flex">
+              <p>Colors</p>
+              <p><i class="ri-arrow-down-s-line" onclick="Toggleopen('filter_Product_Selist'),changeicon('filter_S2')"
+                  id="filter_S2"></i></p>
+            </div>
+            <div class="filter_producttype filter_producttype_acitve" id="filter_Product_Selist">
+              <ul id="color">
+                <li class="filter_producttype_item">
+                  <a href="#">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Blue</span>
+                    <span class="small_text">(184)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">White</span>
+                    <span class="small_text">(130)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Black</span>
+                    <span class="small_text">(125)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Green</span>
+                    <span class="small_text">(100)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Grey</span>
+                    <span class="small_text">(78)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Navy</span>
+                    <span class="small_text">(38)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Pink</span>
+                    <span class="small_text">(35)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Beige</span>
+                    <span class="small_text">(28)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Red</span>
+                    <span class="small_text">(27)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter_sideBar_group">
+            <div class="filter_group_flex">
+              <p>Size</p>
+              <p>
+                <i class="ri-arrow-down-s-line" onclick="Toggleopen('filter_Product_Threelist'),changeicon('filter_T3')"
+                  id="filter_T3"></i>
+              </p>
+            </div>
+            <div class="filter_producttype filter_producttype_acitve" id="filter_Product_Threelist">
+              <ul id="flex_size_item">
+                <li class="filter_producttype_item flex_item_size_producttype">
+                  <a href="#">S</a>
+                </li>
+                <li class="filter_producttype_item flex_item_size_producttype">
+                  <a href="#">M</a>
+                </li>
+                <li class="filter_producttype_item flex_item_size_producttype">
+                  <a href="#">L</a>
+                </li>
+                <li class="filter_producttype_item flex_item_size_producttype">
+                  <a href="#">XL</a>
+                </li>
+                <li class="filter_producttype_item flex_item_size_producttype">
+                  <a href="#">XXL</a>
+                </li>
+                <li class="filter_producttype_item flex_item_size_producttype">
+                  <a href="#">28</a>
+                </li>
+                <li class="filter_producttype_item flex_item_size_producttype">
+                  <a href="#">30</a>
+                </li>
+                <li class="filter_producttype_item flex_item_size_producttype">
+                  <a href="#">32</a>
+                </li>
+                <li class="filter_producttype_item flex_item_size_producttype">
+                  <a href="#">34</a>
+                </li>
+                <li class="filter_producttype_item flex_item_size_producttype">
+                  <a href="#">36</a>
+                </li>
+                <li class="filter_producttype_item flex_item_size_producttype">
+                  <a href="#">38</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter_sideBar_group">
+            <div class="filter_group_flex">
+              <p>Price</p>
+              <p>
+                <i class="ri-arrow-down-s-line" onclick="Toggleopen('filter_Product_Fourlist'),changeicon('filter_F4')"
+                  id="filter_F4"></i>
+              </p>
+            </div>
+            <div class="filter_producttype filter_producttype_acitve" id="filter_Product_Fourlist">
+              <div id="price_range">
+                <div class="slidecontainer">
+                  <p class="price_check">Rs. <span id="value_display"></span> .00</p>
+                  <input type="range" min="399" max="2599" value="399.00" class="slider" id="myRange">
+                  <p class="price_check2">Rs.2599.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter_sideBar_group">
+            <div class="filter_group_flex">
+              <p>Pattern</p>
+              <p>
+                <i class="ri-arrow-down-s-line"
+                  onclick="Toggleopen('filter_Product_FIVElist'),changeicon('filter_FIVE5')" id="filter_FIVE5"></i>
+              </p>
+            </div>
+            <div class="filter_producttype filter_producttype_acitve" id="filter_Product_FIVElist">
+              <ul>
+                <li class="filter_producttype_item">
+                  <a href="#">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Printed</span>
+                    <span class="small_text">(101)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Checks</span>
+                    <span class="small_text">(89)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Plain</span>
+                    <span class="small_text">(58)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Graphic</span>
+                    <span class="small_text">(25)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Floral</span>
+                    <span class="small_text">(19)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Stripes</span>
+                    <span class="small_text">(16)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Embroidery</span>
+                    <span class="small_text">(13)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter_sideBar_group">
+            <div class="filter_group_flex">
+              <p>fittings</p>
+              <p>
+                <i class="ri-arrow-down-s-line" onclick="Toggleopen('filter_Product_SIXlist'),changeicon('filter_SIX6')"
+                  id="filter_SIX6"></i>
+              </p>
+            </div>
+            <div class="filter_producttype filter_producttype_acitve" id="filter_Product_SIXlist">
+              <ul>
+                <li class="filter_producttype_item">
+                  <a href="#">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Slim Fit</span>
+                    <span class="small_text">(601)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Skinny Fit</span>
+                    <span class="small_text">(39)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Relaxed Fit</span>
+                    <span class="small_text">(23)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Custom Fit</span>
+                    <span class="small_text">(15)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Baggy Fit</span>
+                    <span class="small_text">(7)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter_sideBar_group">
+            <div class="filter_group_flex">
+              <p>sleeves</p>
+              <p>
+                <i class="ri-arrow-down-s-line"
+                  onclick="Toggleopen('filter_Product_Sevenlist'),changeicon('filter_Seven7')" id="filter_Seven7"></i>
+              </p>
+            </div>
+            <div class="filter_producttype filter_producttype_acitve" id="filter_Product_Sevenlist">
+              <ul>
+                <li class="filter_producttype_item">
+                  <a href="#">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Full Sleeves</span>
+                    <span class="small_text">(209)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Half Sleeves</span>
+                    <span class="small_text">(67)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Short Sleeves</span>
+                    <span class="small_text">(36)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Sleeveless</span>
+                    <span class="small_text">(5)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter_sideBar_group">
+            <div class="filter_group_flex">
+              <p>neck/collar</p>
+              <p>
+                <i class="ri-arrow-down-s-line"
+                  onclick="Toggleopen('filter_Product_Eightlist'),changeicon('filter_Eight8')" id="filter_Eight8"></i>
+              </p>
+            </div>
+            <div class="filter_producttype filter_producttype_acitve" id="filter_Product_Eightlist">
+              <ul>
+                <li class="filter_producttype_item">
+                  <a href="#">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Spreadn Collar</span>
+                    <span class="small_text">(361)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Mandarin Collar</span>
+                    <span class="small_text">(36)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Crew Neck</span>
+                    <span class="small_text">(33)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Polo Neck</span>
+                    <span class="small_text">(20)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Round Neck</span>
+                    <span class="small_text">(20)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Buttan Down Collar</span>
+                    <span class="small_text">(15)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Chinese Collar</span>
+                    <span class="small_text">(8)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter_sideBar_group">
+            <div class="filter_group_flex">
+              <p>occasion</p>
+              <p>
+                <i class="ri-arrow-down-s-line"
+                  onclick="Toggleopen('filter_Product_Ninelist'),changeicon('filter_Nine9')" id="filter_Nine9"></i>
+              </p>
+            </div>
+            <div class="filter_producttype filter_producttype_acitve" id="filter_Product_Ninelist">
+              <ul>
+                <li class="filter_producttype_item">
+                  <a href="#">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Casual Wear</span>
+                    <span class="small_text">(751)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Comfort Wear</span>
+                    <span class="small_text">(389)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">StreetWear</span>
+                    <span class="small_text">(151)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Beach Wear</span>
+                    <span class="small_text">(144)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Loungewear</span>
+                    <span class="small_text">(38)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Club Wear</span>
+                    <span class="small_text">(17)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Festive</span>
+                    <span class="small_text">(7)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Holiday Wear</span>
+                    <span class="small_text">(7)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Weekend Wear</span>
+                    <span class="small_text">(7)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Lounge Wear</span>
+                    <span class="small_text">(6)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Sport Wear</span>
+                    <span class="small_text">(3)</span>
+                  </a>
+                </li>
+                <li class="filter_producttype_item">
+                  <a href="shop.html">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="text_title">Winter Wear</span>
+                    <span class="small_text">(1)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right_menu">
+        <div class="header_title">
+          <div class="Product_wrapper_main" id="Product_wrapper_main">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer Section Start  -->
+  <div id="Footer-section">
+    <div class="page_width">
+      <footer>
+        <div class="flex_footer_div">
+          <div class="footer_contant1">
+            <ul>
+              <li><a href="#">flagship store now open</a></li>
+              <li><a href="#">bangalore: get Directions</a></li>
+            </ul>
+          </div>
+          <div class="footer_contant2">
+            <ul>
+              <li><a href="#">cantact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer_contant3">
+            <ul>
+              <li><a href="#">Place Returns request </a></li>
+              <li><a href="#">Returns policy</a></li>
+              <li><a href="#">Track your order</a></li>
+            </ul>
+          </div>
+          <div class="footer_contant4">
+            <ul>
+              <li><a href="#">Customer Care</a></li>
+              <li><a href="#">timings: 10 Am - 6:00 PM (Mon-Sat)</a></li>
+              <li title="6354728270"><a href="#">Call: +91 6354728270</a></li>
+              <li title="Sohan@gmail.com"><a href="#">E-mail: Sohan@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_sec_contant">
+          <h4 class="open_click_footer">Sign up and save</h4>
+          <div class="hide-footer">
+            <p>
+              sign up now and be the first to know about exclusive offers,
+              latest fashion trends & style tips!
+            </p>
+            <div class="input_div">
+              <form>
+                <input type="email" placeholder="Enter your email " required />
+                <input type="submit" value="subscribe" />
+              </form>
+            </div>
+            <div class="social_icon">
+              <a href="https://www.snitch.co.in/"><i class="ri-instagram-line"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-facebook-circle-fill"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-video-fill"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-twitter-fill"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-pinterest-fill"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-linkedin-fill"></i></a>
+            </div>
+          </div>
+          <p class="footer_text">
+            © 2023 SNITCH | All Rights Reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <!-- corner btn -->
+  <a href="#"><button class="corner-btn"><i class="ri-arrow-up-s-line"></i></button></a>
+
+
+
+
+  <!-- main js  -->
+  <script src="JavaScript/main.js"></script>
+  <script src="JavaScript/shop.js"></script>
+  <script src="JavaScript/wishlist.js"></script>
+  <script src="JavaScript/singlepage.js"></script>
+  <script src="JavaScript/wishlist.js"></script>
+  <!-- swiper js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    // navigation button
+    //   var swiper1 = new Swiper(".mySwiper1", {
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+    // });
+  </script>
+
+  <!-- aos animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 150, // offset (in px) from the original trigger point
+      delay: 0,
+    });
+  </script>
+
+  <!-- preloading effect  -->
+  <script>
+    // let ldsRoller = document.getElementById('lds-roller');
+
+    // function loading() {
+    //   ldsRoller.style.display = "none";
+    // }
+    let ldsRoller2 = document.getElementById('lds-roller2');
+
+    function loading2() {
+      ldsRoller2.style.display = "none";
+    }
+  </script>
+
+  <!-- <script>
+      // Sticky NavBar Scrolling Nav Bar
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("nav_section");
+        navbar.classList.toggle("nav_section_background", window.scrollY > 100);
+        // if (window.scrollY > 200) {
+        //   navbar.classList.add("nav_section_background");
+        //   navbar.classList.remove("nav_section_background2");
+        // } else {
+        //   navbar.classList.remove("nav_section_background");
+        //   navbar.classList.add("nav_section_background2");
+        // }
+      });
+
+      // SideBar Open and Close
+      const menu_bar = document.querySelector(".menu_bar");
+      const sideBarSection = document.querySelector(".side_bar_section");
+
+      menu_bar.addEventListener("click", () => toggleSidebar());
+
+      const toggleSidebar = () => {
+        // alert('Hello Sohan')
+        sideBarSection.classList.toggle("side_bar_section_active");
+        document.body.classList.toggle("bodyOverflow");
+      };
+
+
+      // Menu Bar Open and Close
+      const DownArrow = document.querySelector(".down_arrow");
+      const LinkList = document.querySelector(".LinkList");
+
+      DownArrow.addEventListener("click", () => toggleMenuBar());
+
+      const toggleMenuBar = () => {
+        // alert("hello sohan")
+        LinkList.classList.toggle("LinkList_active");
+        DownArrow.classList.toggle("ri-arrow-up-s-line");
+      };
+
+      // second Menu bar open 
+      // const InnerArrow = document.querySelector('.inner_arrow');
+      // const LinkListOne = document.querySelector('.LinkList_one');
+
+      // InnerArrow.addEventListener("click", () => secondtoggleMenu());
+
+      // const secondtoggleMenu = () =>{
+      //   // alert("Sohan")
+      //   LinkListOne.classList.toggle("LinkList_one_active");
+      //   InnerArrow.classList.toggle("ri-arrow-up-s-line")
+      // }
+
+      function Toggle(id){
+        let LINkLIStOpen = document.getElementById(id);
+        LINkLIStOpen.classList.toggle("LinkList_one_active")
+        
+      }
+      function change(div){
+        const InnerArrow = document.getElementById(div);
+        InnerArrow.classList.toggle("ri-arrow-up-s-line")
+      }
+       
+    </script> -->
+</body>
+
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account-File</title>
+  <link rel="shortcut icon" href="img/faicone.webp" type="image/x-icon" />
+  <!-- link css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <!-- swipeer js cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- Icone Css -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body onload="loading()">
+  <!-- Preloading effect -->
+  <div class="lds-roller" id="lds-roller"></div>
+  <!-- Top Header Bar -->
+  <div class="top_header">
+    <div class="swiper mySwiper top_balck_header box_shadow">
+      <div class="swiper-wrapper contant_slide">
+        <div class="swiper-slide">
+          <span>Shop for Rs 2499/- &amp; get 10% OFF</span>
+          <span class="sec_span">Use Code: SHOP10</span>
+        </div>
+        <div class="swiper-slide">
+          <span>Shop for Rs 3999/- &amp; Get FLAT 15% OFF</span>
+          <span class="sec_span">Use Code: SHOP15</span>
+        </div>
+        <div class="swiper-slide">
+          <span>flat 25% off | USE CODE: FINALCALL</span>
+          <span class="sec_span"><a href="#">CLICK HERE</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav Sction Start -->
+  <div class="nav_section nav_section_sticky" id="nav_section">
+    <div class="page_width">
+      <div class="nav_flex_item">
+        <div class="menu_bar">
+          <i class="ri-menu-2-fill bicon"></i>
+        </div>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/snichWhite.png" alt="logo" class="whiteimg" />
+            <img src="img/_New Snitch logo.png" alt="logo" class="balckimg" />
+          </a>
+        </div>
+        <div class="nav_link_site">
+          <div class="link_icone hidesoicone">
+            <a href="contact.html">
+              <i class="ri-user-3-line bicon"></i>
+            </a>
+          </div>
+          <div class="link_icone">
+            <i class="ri-search-line  search-bar bicon"></i>
+          </div>
+          <div class="link_icone hidesoicone">
+            <i class="ri-heart-line bicon wish_cart"></i>
+          </div>
+          <div class="link_icone ">
+            <i class="ri-camera-line bicon camera-search"></i>
+          </div>
+          <div class="link_icone shopping-bag cart">
+            <i class="ri-shopping-bag-line bicon"></i><span id="count">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- nav small screen  -->
+
+  <div class="nav_link_site_small">
+    <div class="link_icone">
+      <a href="contact.html">
+        <i class="fa-sharp fa-solid fa-user"></i>
+        <p>Account</p>
+      </a>
+    </div>
+    <div class="link_icone">
+      <a href="index.html">
+        <i class="ri-layout-grid-fill"></i>
+        <p>Collections</p>
+      </a>
+    </div>
+    <div class="link_icone">
+      <a href="shop.html">
+        <i class="fa-solid fa-light fa-shirt" ></i>
+        <p>New Arrival</p>
+      </a>
+    </div>
+    <div class="link_icone">
+      <div>
+        <i class="fa-sharp fa-solid fa-heart" onclick="togglewishbtn()"></i>
+        <p>Wishlist</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Side bar Start -->
+  <div class="side_bar_section">
+    <div class="side_navBar">
+      <div class="navbar_menu">
+        <div class="fixed_header">
+          <div>
+            <a href="#"><i class="ri-user-3-line user"></i></a>
+            <a href="#">LOG IN</a>
+          </div>
+          <i class="ri-close-line close" onclick=" toggleSidebar()"></i>
+        </div>
+        <div class="navbar_list">
+          <ul class="nav_item_list">
+            <li class="NavLink"><a href="#">new</a></li>
+            <li class="NavLink">
+              <div class="fdiv_flex">
+                <a href="#">Shop</a>
+                <a href="#"><i class="ri-arrow-down-s-line down_arrow"></i></a>
+              </div>
+              <div class="LinkList">
+                <div class="Link_content_inner">
+                  <ul class="mobile_nav_list">
+                    <li class="mobile_nav_item">
+                      <div class="flex_mobile_item">
+                        <a href="#">Shirts</a>
+                        <a href="#">
+                          <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('flist'),change('fistrow')"
+                            id="fistrow"></i></a>
+                      </div>
+                      <div class="LinkList_one" id="flist">
+                        <div class="Link_content_inner_one">
+                          <ul class="mobile_nav_list_one">
+                            <li class="mobile_nav_item_one"><a href="#">Plain</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">Stripe</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">linen</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">Checks</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">printed</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">overshirt</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">oversized shirt</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">clubwear</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">floral</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">view all</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <div class="flex_mobile_item">
+                        <a href="#">T-Shirts</a>
+                        <a href="#"><i class="ri-arrow-down-s-line inner_arrow"
+                            onclick="Toggle('Slist'),change('secondrow')" id="secondrow"></i></a>
+                      </div>
+                      <div class="LinkList_one" id="Slist">
+                        <div class="Link_content_inner_one">
+                          <ul class="mobile_nav_list_one">
+                            <li class="mobile_nav_item_one"><a href="#">Basics</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">polo</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">graphic printed</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">over sized</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">sleeveless</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">view all</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <div class="flex_mobile_item">
+                        <a href="#">Jeans</a>
+                        <a href="#"><i class="ri-arrow-down-s-line inner_arrow"
+                            onclick="Toggle('Tlist'),change('Threedrow')" id="Threedrow"></i></a>
+                      </div>
+                      <div class="LinkList_one" id="Tlist">
+                        <div class="Link_content_inner_one">
+                          <ul class="mobile_nav_list_one">
+                            <li class="mobile_nav_item_one"><a href="#">skinny fit</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">boot cut</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">baggy fit</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">straight fit</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">slim fit</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mobile_nav_item"><a href="#">cargo</a></li>
+                    <li class="mobile_nav_item">
+                      <div class="flex_mobile_item">
+                        <a href="#">bottom wear</a>
+                        <a href="#">
+                          <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('fourlist'),change('fourrow')"
+                            id="fourrow"></i>
+                        </a>
+                      </div>
+                      <div class="LinkList_one" id="fourlist">
+                        <div class="Link_content_inner_one">
+                          <ul class="mobile_nav_list_one">
+                            <li class="mobile_nav_item_one"><a href="#">Chinos</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">formals</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">joggers</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">shorts</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <div class="flex_mobile_item">
+                        <a href="#">lounge wear</a>
+                        <a href="#">
+                          <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('fivelist'),change('Fivrow')"
+                            id="Fivrow"></i>
+                        </a>
+                      </div>
+                      <div class="LinkList_one" id="fivelist">
+                        <div class="Link_content_inner_one">
+                          <ul class="mobile_nav_list_one">
+                            <li class="mobile_nav_item_one"><a href="#">Boxers</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">innerwear</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">night suits & pyjamas</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <a href="#">co-Ords</a>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <a href="#">jackets</a>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <a href="#">hoodie's</a>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <a href="#">sweaters</a>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <div class="flex_mobile_item">
+                        <a href="#">snitch plus</a>
+                        <a href="#">
+                          <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('sixlist'),change('SixRow')"
+                            id="SixRow"></i>
+                        </a>
+                      </div>
+                      <div class="LinkList_one" id="sixlist">
+                        <div class="Link_content_inner_one">
+                          <ul class="mobile_nav_list_one">
+                            <li class="mobile_nav_item_one"><a href="#">Shirts</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">trousers</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">denim</a></li>
+                            <li class="mobile_nav_item_one"><a href="#">shorts</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mobile_nav_item">
+                      <a href="#">snitch luxe</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="NavLink"><a href="#">IN the spotlight</a></li>
+            <li class="NavLink"><a href="#">Download App</a></li>
+            <li class="NavLink"><a href="#">Track order</a></li>
+            <li class="NavLink">
+              <a href="#">place a return REquest</a>
+            </li>
+            <li class="NavLink"><a href="#">customer support</a></li>
+            <li class="NavLink"><a href="#">Store location </a></li>
+            <li class="NavLink"><a href="#">ReLove</a></li>
+          </ul>
+        </div>
+        <div class="Nav_social_icon">
+          <div class="s_icon">
+            <a href="https://www.snitch.co.in/"><i class="ri-instagram-line"></i></a>
+          </div>
+          <div class="s_icon">
+            <a href="https://www.snitch.co.in/"><i class="ri-facebook-circle-fill"></i></a>
+          </div>
+          <div class="s_icon">
+            <a href="https://www.snitch.co.in/"><i class="ri-video-fill"></i></a>
+          </div>
+          <div class="s_icon">
+            <a href="https://www.snitch.co.in/"><i class="ri-twitter-fill"></i></a>
+          </div>
+          <div class="s_icon">
+            <a href="https://www.snitch.co.in/"><i class="ri-pinterest-fill"></i></a>
+          </div>
+          <div class="s_icon">
+            <a href="https://www.snitch.co.in/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Section Start -->
+  <div class="Cart_section">
+    <div class="Cart_side_menu">
+      <div class="cart_menu">
+        <div class="heading">
+          <h2>Cart</h2>
+          <i class="ri-close-line close" onclick="ToggleCartSection()"></i>
+        </div>
+        <div class="cart_contant" id="cartItem">
+          <p class="cart_text">your cart is empty</p>
+          <!-- <p>Your cart is currently empty.</p> -->
+          <!-- <div class="cartproduct">
+            <div class="imagew">
+              <img src=${} alt="">
+            </div>
+            <h4>${}</h4>
+            <div class="qty">
+              <button><img src="img/qunty/plus.png"></button>
+              <button><img src="img/qunty/minus.png"></button>
+              <p>${}</p>
+              <button>-</button>
+            </div>
+            <p>${}</p>
+            <div class="btn_r">
+              <i class="ri-delete-bin-line"></i>
+            </div>
+          </div> -->
+        </div>
+        <div class="foot">
+          <h3>Total</h3>
+          <h2 id="total">Rs. 0.00</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Section Start -->
+  <div class="Search_section">
+    <div class="Search_menu">
+      <div class="search_bar_flex">
+        <div class="search_bar">
+          <a href="shop.html"><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></a>
+          <input type="search" name="search" id="" placeholder="Search">
+        </div>
+        <div class="close_menu" onclick="toggleSearch()">
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
+      <div class="trending_product">
+        <p>Trending Products</p>
+        <div class="product_grid_item">
+          <div class="pro_wrapper">
+            <a href="shop.html">
+              <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2449-02-M49.jpg?v=1695880735">
+              <div class="pro-detail">
+                <span class="title">Tencil Stripe Pink Shirt</span>
+                <span class="price">Rs.1,199</span>
+              </div>
+            </a>
+          </div>
+          <div class="pro_wrapper">
+            <a href="shop.html">
+              <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2449-03-M26.jpg?v=1695983532">
+              <div class="pro-detail">
+                <span class="title">Tencil Stripe Navy Shirt</span>
+                <span class="price">Rs.1,199</span>
+              </div>
+            </a>
+          </div>
+          <div class="pro_wrapper">
+            <a href="shop.html">
+              <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2449-04-M39.jpg?v=1695880979">
+              <div class="pro-detail">
+                <span class="title">Tencil Stripe Yellow Shirt</span>
+                <span class="price">Rs.1,199</span>
+              </div>
+            </a>
+          </div>
+          <div class="pro_wrapper">
+            <a href="shop.html">
+              <img src="https://www.snitch.co.in/cdn/shop/files/4MSO4515-02-3255.jpg?v=1696008000">
+              <div class="pro-detail">
+                <span class="title">Sauvie Olive Cargo Pant</span>
+                <span class="price">Rs.1,399</span>
+              </div>
+            </a>
+          </div>
+          <div class="pro_wrapper">
+            <a href="shop.html">
+              <img src="https://www.snitch.co.in/cdn/shop/products/Lazar_Oct16535.jpg?v=1668265593&width=120">
+              <div class="pro-detail">
+                <span class="title">Smushy Black Shirt</span>
+                <span class="price">Rs.1,299</span>
+              </div>
+            </a>
+          </div>
+          <div class="pro_wrapper">
+            <a href="shop.html">
+              <img src="https://www.snitch.co.in/cdn/shop/products/SNITCH-JUNE1503.jpg?v=1655120022p">
+              <div class="pro-detail">
+                <span class="title">Aster White Shirt</span>
+                <span class="price">Rs.799</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- camera section start -->
+  <div class="camera_section">
+    <div class="camera_search_menu">
+      <div class="title_contant">
+        <h3>Visual Search</h3>
+        <i class="fa-solid fa-x" onclick="toggleCamera()"></i>
+      </div>
+      <div class="main_contant">
+        <div class="left_menu">
+          <div class="uploadImg">
+            <div class="imgWrapper">
+              <img src="img/serchCamera/image.svg" alt="">
+            </div>
+            <div class="step">
+              <p>Step 1: Upload an image</p>
+              <span>Take a photo or screenshot of your product inspiration and upload here.</span>
+            </div>
+          </div>
+          <div class="uploadImg">
+            <div class="imgWrapper">
+              <img src="img/serchCamera/search.svg" alt="">
+            </div>
+            <div class="step">
+              <p>Step 2: Find similar items</p>
+              <span>We'll analyze your image and recommend similar products.</span>
+            </div>
+          </div>
+          <div class="fileupload">
+            <div class="filecontan">
+              <input type="file" name="" id="file" accept="image/*" style="display: none;">
+              <label for="file">
+                <img src="img/serchCamera/file.svg">
+                <p>Drag and drop or browse your file here</p>
+                <p>Maximum file size: 10mb</p>
+              </label>
+              <label for="file" class="label2">Upload Image</label>
+            </div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <div class="right_menu">
+          <p>Need inspiration? Try an image from our gallery:</p>
+          <div class="grid_section">
+            <div class="img-wrap">
+              <a href="shop.html"><img src="img/serchCamera/produc/img1.webp"></a>
+            </div>
+            <div class="img-wrap">
+              <a href="shop.html"><img src="img/serchCamera/produc/img2.webp"></a>
+            </div>
+            <div class="img-wrap">
+              <a href="shop.html"><img src="img/serchCamera/produc/img3.webp"></a>
+            </div>
+            <div class="img-wrap">
+              <a href="shop.html"><img src="img/serchCamera/produc/img4.webp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WishList Section Start -->
+  <div class="wish_section">
+    <div class="wish_menu">
+      <div class="title_contant">
+        <h3>Wish List</h3>
+        <i class="fa-solid fa-x" onclick="togglewishbtn()"></i>
+      </div>
+      <div class="wishcontan" id="wishItem">
+        <p class="wishtext">your wishlist is empty</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Contant Start -->
+  <div id="main">
+    <div class="page_width_main">
+      <div class="contact_section">
+        <div class="title">
+          <h1>LOGIN</h1>
+        </div>
+        <div class="balank_div">
+
+        </div>
+        <div class="form_seciton_login">
+          <form>
+            <label for="" class="label">Email</label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="" class="label">Password</label><span><a href="#">Forgot Password?</a></span>
+            <input type="password" name="password" id="password" required><br>
+            <input type="submit" value="SIGN IN" class="sbt_btn">
+            <a href="creatAcoount.html" class="creat_text">Create account</a>
+          </form>
+          <div class="social_link">
+            <div class="social_img facebook_icon">
+              <img src="img/contac img/facebook.png" alt="">
+              <span class="social_text"> <a href="#">Facebook</a></span>
+            </div>
+            <div class="social_img">
+              <img src="img/contac img/google.png" alt="">
+              <span class="social_text"><a href="#">Google</a></span>
+            </div>
+            <div class="social_img">
+              <img src="img/contac img/twitter1.png" alt="">
+              <span class="social_text"><a href="#">Twitter</a></span>
+            </div>
+            <div class="social_img">
+              <img src="img/contac img/amazon1.png" alt="">
+              <span class="social_text"> <a href="#">Amazon</a></span>
+            </div>
+          </div>
+          <div class="guest_text">
+            <h1>CONTINUE AS A GUEST</h1>
+          </div>
+          <div class="continue_btn">
+            <button><a href="#">CONTINUE</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section Start  -->
+  <div id="Footer-section">
+    <div class="page_width">
+      <footer>
+        <div class="flex_footer_div">
+          <div class="footer_contant1">
+            <ul>
+              <li><a href="#">flagship store now open</a></li>
+              <li><a href="#">bangalore: get Directions</a></li>
+            </ul>
+          </div>
+          <div class="footer_contant2">
+            <ul>
+              <li><a href="#">cantact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer_contant3">
+            <ul>
+              <li><a href="#">Place Returns request </a></li>
+              <li><a href="#">Returns policy</a></li>
+              <li><a href="#">Track your order</a></li>
+            </ul>
+          </div>
+          <div class="footer_contant4">
+            <ul>
+              <li><a href="#">Customer Care</a></li>
+              <li><a href="#">timings: 10 Am - 6:00 PM (Mon-Sat)</a></li>
+              <li title="6354728270"><a href="#">Call: +91 6354728270</a></li>
+              <li title="Sohan@gmail.com"><a href="#">E-mail: Sohan@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_sec_contant">
+          <h4 class="open_click_footer">Sign up and save</h4>
+          <div class="hide-footer">
+            <p>
+              sign up now and be the first to know about exclusive offers,
+              latest fashion trends & style tips!
+            </p>
+            <div class="input_div">
+              <form>
+                <input type="email" placeholder="Enter your email " required />
+                <input type="submit" value="subscribe" />
+              </form>
+            </div>
+            <div class="social_icon">
+              <a href="https://www.snitch.co.in/"><i class="ri-instagram-line"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-facebook-circle-fill"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-video-fill"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-twitter-fill"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-pinterest-fill"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-linkedin-fill"></i></a>
+            </div>
+          </div>
+          <p class="footer_text">
+            © 2023 SNITCH | All Rights Reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <!-- main js  -->
+  <script src="JavaScript/main.js"></script>
+  <script src="JavaScript/singlepage.js"></script>
+
+  <!-- swiper js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    // navigation button
+    //   var swiper1 = new Swiper(".mySwiper1", {
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+    // });
+  </script>
+
+  <!-- Preloading Effect -->
+  <script>
+    let ldsRoller = document.getElementById("lds-roller");
+
+    function loading() {
+      ldsRoller.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

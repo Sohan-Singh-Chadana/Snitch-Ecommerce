@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Your Style - SNITCH</title>
+  <link rel="shortcut icon" href="img/faicone.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shop.css">
+  <!-- Icone Css -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- swipeer js cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- aos animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body onload="loadingInner()">
+  <!-- Preloading effect -->
+  <!-- <div class="lds-roller" id="lds-roller"></div> onload="loading()" -->
+  <!-- Top Header Bar -->
+  <div class="top_header">
+    <div class="swiper mySwiper top_balck_header">
+      <div class="swiper-wrapper contant_slide">
+        <div class="swiper-slide">
+          <span>Shop for Rs 2499/- &amp; get 10% OFF</span>
+          <span class="sec_span">Use Code: SHOP10</span>
+        </div>
+        <div class="swiper-slide">
+          <span>Shop for Rs 3999/- &amp; Get FLAT 15% OFF</span>
+          <span class="sec_span">Use Code: SHOP15</span>
+        </div>
+        <div class="swiper-slide">
+          <span>flat 25% off | USE CODE: FINALCALL</span>
+          <span class="sec_span"><a href="#">CLICK HERE</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header_section">
+    <header>
+      <div class="header_site">
+        <div class="nav_section" id="nav_section">
+          <div class="page_width">
+            <div class="nav_flex_item">
+              <div class="menu_bar">
+                <i class="ri-menu-2-fill"></i>
+              </div>
+              <div class="logo">
+                <a href="#">
+                  <img src="img/snichWhite.png" alt="logo" class="whiteimg" />
+                  <img src="img/_New Snitch logo.png" alt="logo" class="balckimg" />
+                </a>
+              </div>
+              <div class="nav_link_site">
+                <div class="link_icone hidesoicone">
+                  <a href="contact.html">
+                    <i class="ri-user-3-line"></i>
+                  </a>
+                </div>
+                <div class="link_icone">
+                  <i class="ri-search-line search-bar"></i>
+                </div>
+                <div class="link_icone hidesoicone wislbag">
+                  <i class="ri-heart-line bicon wish_cart" style="color: #e30d23 !important;"></i>
+                  <span id="count1">0</span>
+                </div>
+                <div class="link_icone ">
+                  <i class="ri-camera-line camera-search"></i>
+                </div>
+                <div class="link_icone shopping-bag cart">
+                  <i class="ri-shopping-bag-line"></i><span id="count">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="background">
+          <!-- Preloading effect -->
+          <div class="lds-roller" id="lds-rollerInner"></div>
+          <div class="swiper mySwiper backgroun_wrapper" data-aos="fade-left">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide back1img">
+                <img src="img/back555.webp" alt="bg2" class="showimge" />
+                <img src="img/backsmall5.webp" alt="bg2" class="showsmall showimge1" />
+                <video autoplay theater muted loop>
+                  <source src="./back video/video1.mp4" type="video/mp4" class="videohide" />
+                </video>
+              </div>
+              <div class="swiper-slide back1img">
+                <img src="img/bg2.webp" alt="bg2" class="showimge" />
+                <img src="img/product/new-inss.webp" alt="bg2" class="showsmall showimge1" />
+                <video autoplay theater muted loop>
+                  <source src="back video/video2.mp4" type="video/mp4" class="videohide" />
+                </video>
+              </div>
+              <div class="swiper-slide back1img">
+                <img src="img/bg3.webp" alt="bg3" class="showimge" />
+                <img src="img/product/pro2.webp" alt="bg2" class="showsmall showimge1" />
+                <video autoplay theater muted>
+                  <source src="back video/video3.mp4" type="video/mp4" class="videohide" />
+                </video>
+              </div>
+            </div>
+            <div class="swiper-pagination">
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- nav small screen  -->
+
+      <div class="nav_link_site_small">
+        <div class="link_icone">
+          <a href="contact.html">
+            <i class="fa-sharp fa-solid fa-user"></i>
+            <p>Account</p>
+          </a>
+        </div>
+        <div class="link_icone">
+          <a href="#product_section3">
+            <i class="ri-layout-grid-fill"></i>
+            <p>Collections</p>
+          </a>
+        </div>
+        <div class="link_icone">
+          <a href="shop.html">
+            <i class="fa-solid fa-light fa-shirt"></i>
+            <p>New Arrival</p>
+          </a>
+        </div>
+        <div class="link_icone">
+            <div>
+              <i class="fa-sharp fa-solid fa-heart" onclick="togglewishbtn()"></i>
+              <p>Wishlist</p>
+            </div>
+        </div>
+      </div>
+
+      <!-- Side bar Start -->
+      <div class="side_bar_section">
+        <div class="side_navBar">
+          <div class="navbar_menu">
+            <div class="fixed_header">
+              <div>
+                <a href="#"><i class="ri-user-3-line user"></i></a>
+                <a href="#">LOG IN</a>
+              </div>
+              <i class="ri-close-line close" onclick=" toggleSidebar()"></i>
+            </div>
+            <div class="navbar_list">
+              <ul class="nav_item_list">
+                <li class="NavLink"><a href="#">new</a></li>
+                <li class="NavLink">
+                  <div class="fdiv_flex">
+                    <a href="#">Shop</a>
+                    <a href="#"><i class="ri-arrow-down-s-line down_arrow"></i></a>
+                  </div>
+                  <div class="LinkList">
+                    <div class="Link_content_inner">
+                      <ul class="mobile_nav_list">
+                        <li class="mobile_nav_item">
+                          <div class="flex_mobile_item">
+                            <a href="#">Shirts</a>
+                            <a href="#">
+                              <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('flist'),change('fistrow')"
+                                id="fistrow"></i></a>
+                          </div>
+                          <div class="LinkList_one" id="flist">
+                            <div class="Link_content_inner_one">
+                              <ul class="mobile_nav_list_one">
+                                <li class="mobile_nav_item_one"><a href="#">Plain</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">Stripe</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">linen</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">Checks</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">printed</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">overshirt</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">oversized shirt</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">clubwear</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">floral</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">view all</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mobile_nav_item">
+                          <div class="flex_mobile_item">
+                            <a href="#">T-Shirts</a>
+                            <a href="#"><i class="ri-arrow-down-s-line inner_arrow"
+                                onclick="Toggle('Slist'),change('secondrow')" id="secondrow"></i></a>
+                          </div>
+                          <div class="LinkList_one" id="Slist">
+                            <div class="Link_content_inner_one">
+                              <ul class="mobile_nav_list_one">
+                                <li class="mobile_nav_item_one"><a href="#">Basics</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">polo</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">graphic printed</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">over sized</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">sleeveless</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">view all</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mobile_nav_item">
+                          <div class="flex_mobile_item">
+                            <a href="#">Jeans</a>
+                            <a href="#"><i class="ri-arrow-down-s-line inner_arrow"
+                                onclick="Toggle('Tlist'),change('Threedrow')" id="Threedrow"></i></a>
+                          </div>
+                          <div class="LinkList_one" id="Tlist">
+                            <div class="Link_content_inner_one">
+                              <ul class="mobile_nav_list_one">
+                                <li class="mobile_nav_item_one"><a href="#">skinny fit</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">boot cut</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">baggy fit</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">straight fit</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">slim fit</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mobile_nav_item"><a href="#">cargo</a></li>
+                        <li class="mobile_nav_item">
+                          <div class="flex_mobile_item">
+                            <a href="#">bottom wear</a>
+                            <a href="#">
+                              <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('fourlist'),change('fourrow')"
+                                id="fourrow"></i>
+                            </a>
+                          </div>
+                          <div class="LinkList_one" id="fourlist">
+                            <div class="Link_content_inner_one">
+                              <ul class="mobile_nav_list_one">
+                                <li class="mobile_nav_item_one"><a href="#">Chinos</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">formals</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">joggers</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">shorts</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mobile_nav_item">
+                          <div class="flex_mobile_item">
+                            <a href="#">lounge wear</a>
+                            <a href="#">
+                              <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('fivelist'),change('Fivrow')"
+                                id="Fivrow"></i>
+                            </a>
+                          </div>
+                          <div class="LinkList_one" id="fivelist">
+                            <div class="Link_content_inner_one">
+                              <ul class="mobile_nav_list_one">
+                                <li class="mobile_nav_item_one"><a href="#">Boxers</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">innerwear</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">night suits & pyjamas</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mobile_nav_item">
+                          <a href="#">co-Ords</a>
+                        </li>
+                        <li class="mobile_nav_item">
+                          <a href="#">jackets</a>
+                        </li>
+                        <li class="mobile_nav_item">
+                          <a href="#">hoodie's</a>
+                        </li>
+                        <li class="mobile_nav_item">
+                          <a href="#">sweaters</a>
+                        </li>
+                        <li class="mobile_nav_item">
+                          <div class="flex_mobile_item">
+                            <a href="#">snitch plus</a>
+                            <a href="#">
+                              <i class="ri-arrow-down-s-line inner_arrow" onclick="Toggle('sixlist'),change('SixRow')"
+                                id="SixRow"></i>
+                            </a>
+                          </div>
+                          <div class="LinkList_one" id="sixlist">
+                            <div class="Link_content_inner_one">
+                              <ul class="mobile_nav_list_one">
+                                <li class="mobile_nav_item_one"><a href="#">Shirts</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">trousers</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">denim</a></li>
+                                <li class="mobile_nav_item_one"><a href="#">shorts</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mobile_nav_item">
+                          <a href="#">snitch luxe</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="NavLink"><a href="#">IN the spotlight</a></li>
+                <li class="NavLink"><a href="#">Download App</a></li>
+                <li class="NavLink"><a href="#">Track order</a></li>
+                <li class="NavLink">
+                  <a href="#">place a return REquest</a>
+                </li>
+                <li class="NavLink"><a href="#">customer support</a></li>
+                <li class="NavLink"><a href="#">Store location </a></li>
+                <li class="NavLink"><a href="#">ReLove</a></li>
+              </ul>
+            </div>
+            <div class="Nav_social_icon">
+              <div class="s_icon">
+                <a href="https://www.snitch.co.in/"><i class="ri-instagram-line"></i></a>
+              </div>
+              <div class="s_icon">
+                <a href="https://www.snitch.co.in/"><i class="ri-facebook-circle-fill"></i></a>
+              </div>
+              <div class="s_icon">
+                <a href="https://www.snitch.co.in/"><i class="ri-video-fill"></i></a>
+              </div>
+              <div class="s_icon">
+                <a href="https://www.snitch.co.in/"><i class="ri-twitter-fill"></i></a>
+              </div>
+              <div class="s_icon">
+                <a href="https://www.snitch.co.in/"><i class="ri-pinterest-fill"></i></a>
+              </div>
+              <div class="s_icon">
+                <a href="https://www.snitch.co.in/"><i class="ri-linkedin-fill"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cart Section Start -->
+      <div class="Cart_section">
+        <div class="Cart_side_menu">
+          <div class="cart_menu">
+            <div class="heading">
+              <h2>Cart</h2>
+              <i class="ri-close-line close" onclick="ToggleCartSection()"></i>
+            </div>
+            <div class="cart_contant" id="cartItem">
+              <p class="cart_text">your cart is empty</p>
+            </div>
+            <div class="foot">
+              <h3>Total</h3>
+              <h2 id="total">Rs. 0.00</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Section Start -->
+      <div class="Search_section">
+        <div class="Search_menu">
+          <div class="search_bar_flex">
+            <div class="search_bar">
+              <a href="shop.html"><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></a>
+              <input type="search" name="search" id="" placeholder="Search">
+            </div>
+            <div class="close_menu" onclick="toggleSearch()">
+              <i class="fa-solid fa-x"></i>
+            </div>
+          </div>
+          <div class="trending_product">
+            <p>Trending Products</p>
+            <div class="product_grid_item">
+              <div class="pro_wrapper">
+                <a href="shop.html">
+                  <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2449-02-M49.jpg?v=1695880735">
+                  <div class="pro-detail">
+                    <span class="title">Tencil Stripe Pink Shirt</span>
+                    <span class="price">Rs.1,199</span>
+                  </div>
+                </a>
+              </div>
+              <div class="pro_wrapper">
+                <a href="shop.html">
+                  <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2449-03-M26.jpg?v=1695983532">
+                  <div class="pro-detail">
+                    <span class="title">Tencil Stripe Navy Shirt</span>
+                    <span class="price">Rs.1,199</span>
+                  </div>
+                </a>
+              </div>
+              <div class="pro_wrapper">
+                <a href="shop.html">
+                  <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2449-04-M39.jpg?v=1695880979">
+                  <div class="pro-detail">
+                    <span class="title">Tencil Stripe Yellow Shirt</span>
+                    <span class="price">Rs.1,199</span>
+                  </div>
+                </a>
+              </div>
+              <div class="pro_wrapper">
+                <a href="shop.html">
+                  <img src="https://www.snitch.co.in/cdn/shop/files/4MSO4515-02-3255.jpg?v=1696008000">
+                  <div class="pro-detail">
+                    <span class="title">Sauvie Olive Cargo Pant</span>
+                    <span class="price">Rs.1,399</span>
+                  </div>
+                </a>
+              </div>
+              <div class="pro_wrapper">
+                <a href="shop.html">
+                  <img src="https://www.snitch.co.in/cdn/shop/products/Lazar_Oct16535.jpg?v=1668265593&width=120">
+                  <div class="pro-detail">
+                    <span class="title">Smushy Black Shirt</span>
+                    <span class="price">Rs.1,299</span>
+                  </div>
+                </a>
+              </div>
+              <div class="pro_wrapper">
+                <a href="shop.html">
+                  <img src="https://www.snitch.co.in/cdn/shop/products/SNITCH-JUNE1503.jpg?v=1655120022p">
+                  <div class="pro-detail">
+                    <span class="title">Aster White Shirt</span>
+                    <span class="price">Rs.799</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- camera section start -->
+      <div class="camera_section">
+        <div class="camera_search_menu">
+          <div class="title_contant">
+            <h3>Visual Search</h3>
+            <i class="fa-solid fa-x" onclick="toggleCamera()"></i>
+          </div>
+          <div class="main_contant">
+            <div class="left_menu">
+              <div class="uploadImg">
+                <div class="imgWrapper">
+                  <img src="img/serchCamera/image.svg" alt="">
+                </div>
+                <div class="step">
+                  <p>Step 1: Upload an image</p>
+                  <span>Take a photo or screenshot of your product inspiration and upload here.</span>
+                </div>
+              </div>
+              <div class="uploadImg">
+                <div class="imgWrapper">
+                  <img src="img/serchCamera/search.svg" alt="">
+                </div>
+                <div class="step">
+                  <p>Step 2: Find similar items</p>
+                  <span>We'll analyze your image and recommend similar products.</span>
+                </div>
+              </div>
+              <div class="fileupload">
+                <div class="filecontan">
+                  <input type="file" name="" id="file" accept="image/*" style="display: none;">
+                  <label for="file">
+                    <img src="img/serchCamera/file.svg">
+                    <p>Drag and drop or browse your file here</p>
+                    <p>Maximum file size: 10mb</p>
+                  </label>
+                  <label for="file" class="label2">Upload Image</label>
+                </div>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <div class="right_menu">
+              <p>Need inspiration? Try an image from our gallery:</p>
+              <div class="grid_section">
+                <div class="img-wrap">
+                  <a href="shop.html"><img src="img/serchCamera/produc/img1.webp"></a>
+                </div>
+                <div class="img-wrap">
+                  <a href="shop.html"><img src="img/serchCamera/produc/img2.webp"></a>
+                </div>
+                <div class="img-wrap">
+                  <a href="shop.html"><img src="img/serchCamera/produc/img3.webp"></a>
+                </div>
+                <div class="img-wrap">
+                  <a href="shop.html"><img src="img/serchCamera/produc/img4.webp"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WishList Section Start -->
+      <div class="wish_section">
+        <div class="wish_menu">
+          <div class="title_contant">
+            <h3>Wish List</h3>
+            <i class="fa-solid fa-x" onclick="togglewishbtn()"></i>
+          </div>
+          <div class="wishcontan" id="wishItem">
+            <p class="wishtext">your wishlist is empty</p>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Semple product Section Start  -->
+  <div id="Semple_Section_product">
+    <div class="container">
+      <div class="Pro_wrapper">
+        <div class="pro_inner_wrapper">
+          <div class="pro_img">
+            <a href="#"><img src="https://www.snitch.co.in/cdn/shop/files/ezgif.com-gif-to-webp_3.webp?v=1691234064"
+                alt=""></a>
+          </div>
+          <h2><a href="#">Pure Opulence</a></h2>
+          <h4><a href="#">Fall in love with all-white shirts</a></h4>
+        </div>
+        <div class="pro_inner_wrapper">
+          <div class="pro_img">
+            <a href="#"><img src="https://www.snitch.co.in/cdn/shop/files/ezgif.com-gif-to-webp_1.webp?v=1691234064"
+                alt=""></a>
+          </div>
+          <h2><a href="#">LINEN REVERIE</a></h2>
+          <h4><a href="#">A Sanctuary Of Comfort & Grace</a></h4>
+        </div>
+        <div class="pro_inner_wrapper">
+          <div class="pro_img">
+            <a href="#"><img src="https://www.snitch.co.in/cdn/shop/files/ezgif.com-gif-to-webp_4.webp?v=1691234065"
+                alt=""></a>
+          </div>
+          <h2><a href="#">Y2K</a></h2>
+          <h4><a href="#">Timeless Styles, Future-Forward</a></h4>
+        </div>
+        <div class="pro_inner_wrapper">
+          <div class="pro_img">
+            <a href="#"><img src="https://www.snitch.co.in/cdn/shop/files/ezgif.com-gif-to-webp_2.webp?v=1691234065"
+                alt=""></a>
+          </div>
+          <h2><a href="#">Pop prints</a></h2>
+          <h4><a href="#">Threads of Art</a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- threed section start -->
+  <div class="swiper mySwiper pay_back_image">
+    <div class="swiper-wrapper backgroundimg">
+      <div class="swiper-slide">
+        <img src="img/pay6.webp" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/pay5.webp" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/pay4.webp" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- four product section start -->
+  <div id="product_section">
+    <div class="page_width">
+      <div class="header_title">
+        <h2>New drops</h2>
+      </div>
+      <div class="Product_wrapper" id="Product_wrapper">
+
+      </div>
+      <div class="view-btn">
+        <a href="shop.html">view all</a>
+      </div>
+    </div>
+  </div>
+  <!-- Shouse product section start -->
+  <div id="product_section">
+    <div class="page_width">
+      <div class="header_title">
+        <h2>STEP INTO THE SPOTLIGHT</h2>
+      </div>
+      <div class="Product_wrapper fivelayout" id="Product_wrapper">
+        <div class="product_inner_wrapper" data-aos="fade-down">
+          <div class="pro_img">
+            <img src="https://www.snitch.co.in/cdn/shop/files/IMG_0537.jpg?v=1695038114&width=1800" alt="">
+            <div class="overlay">
+              <img src="https://www.snitch.co.in/cdn/shop/files/IMG_0541.jpg?v=1695038114&width=1800" alt="" class="seimg">
+            </div>
+          </div>
+          <div class="desc">
+            <h2 class="f12">Contrast White Low Top Sneaker</h2>
+            <h4>Rs. 2,190</h4>
+             <div class="size pd-f" id="sizeg">
+              <span class="Cl-h1 Cl-h1_H">40</span>
+              <span class="Cl-h1">41</span>
+              <span class="Cl-h1">42</span>
+              <span class="Cl-h1">43</span>
+              <span class="Cl-h1">44</span>
+            </div>
+          </div>
+        </div>
+        <div class="product_inner_wrapper" data-aos="fade-down">
+          <div class="pro_img">
+            <img src="https://www.snitch.co.in/cdn/shop/files/IMG_0591.jpg?v=1695036991&width=1800" alt="">
+            <div class="overlay">
+              <img src="https://www.snitch.co.in/cdn/shop/files/IMG_0595.jpg?v=1695037016&width=1800" alt="" class="seimg">
+            </div>
+          </div>
+          <div class="desc">
+            <h2 class="f12">Panelled White Low Top Sneakerss</h2>
+            <h4>Rs. 2,190</h4>
+             <div class="size pd-f" id="sizeg">
+              <span class="Cl-h1 Cl-h1_H">40</span>
+              <span class="Cl-h1">41</span>
+              <span class="Cl-h1">42</span>
+              <span class="Cl-h1">43</span>
+              <span class="Cl-h1">44</span>
+            </div>
+          </div>
+        </div>
+        <div class="product_inner_wrapper" data-aos="fade-down">
+          <div class="pro_img">
+            <img src="https://www.snitch.co.in/cdn/shop/files/IMG_0759.jpg?v=1695036990&width=1800" alt="">
+            <div class="overlay">
+              <img src="https://www.snitch.co.in/cdn/shop/files/IMG_0756.jpg?v=1695036990&width=1800" alt="" class="seimg">
+            </div>
+          </div>
+          <div class="desc">
+            <h2 class="f12">Combined Piece White SneakerR</h2>
+            <h4>Rs. 2,190</h4>
+             <div class="size pd-f" id="sizeg">
+              <span class="Cl-h1 Cl-h1_H">40</span>
+              <span class="Cl-h1" onclick="activeclass()">41</span>
+              <span class="Cl-h1" onclick="activeclass()">42</span>
+              <span class="Cl-h1" onclick="activeclass()">43</span>
+              <span class="Cl-h1" onclick="activeclass()">44</span>
+            </div>
+          </div>
+        </div>
+        <div class="product_inner_wrapper" data-aos="fade-down">
+          <div class="pro_img">
+            <img src="https://www.snitch.co.in/cdn/shop/files/IMG_0848.jpg?v=1695036641&width=1800ss" alt="">
+            <div class="overlay">
+              <img src="https://www.snitch.co.in/cdn/shop/files/IMG_0846_1.jpg?v=1695638430&width=1800" alt="" class="seimg">
+            </div>
+          </div>
+          <div class="desc">
+            <h2 class="f12">Basic Blue Casual Sneaker</h2>
+            <h4>Rs. 2,190</h4>
+            <div class="size pd-f" id="sizeg">
+              <span class="Cl-h1 Cl-h1_H" onclick="activeclass()">40</span>
+              <span class="Cl-h1" onclick="activeclass()">41</span>
+              <span class="Cl-h1" onclick="activeclass()">42</span>
+              <span class="Cl-h1" onclick="activeclass()">43</span>
+              <span class="Cl-h1" onclick="activeclass()">44</span>
+            </div>
+          </div>
+        </div>
+        <div class="product_inner_wrapper" data-aos="fade-down">
+          <div class="pro_img">
+            <img src="https://www.snitch.co.in/cdn/shop/files/IMG_0828.jpg?v=1695036582&width=1800" alt="">
+            <div class="overlay">
+              <img src="https://www.snitch.co.in/cdn/shop/files/IMG_0825.jpg?v=1695036582&width=1800" alt="" class="seimg">
+            </div>
+          </div>
+          <div class="desc">
+            <h2 class="f12">Basic White Casual Sneaker</h2>
+            <h4>Rs. 2,190</h4>
+            <div class="size pd-f" id="sizeg">
+              <span class="Cl-h1 Cl-h1_H">40</span>
+              <span class="Cl-h1">41</span>
+              <span class="Cl-h1">42</span>
+              <span class="Cl-h1">43</span>
+              <span class="Cl-h1">44</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+  <!-- prfume product section start -->
+  <div id="product_section">
+    <div class="page_width">
+      <div class="header_title">
+        <h2>DISCOVER YOUR SCENT</h2>
+        <h3>BUY 1 GET 1 FREE</h3>
+      </div>
+      <div class="Product_wrapper" id="Product_wrapper">
+        <div class="product_inner_wrapper" data-aos="fade-down">
+          <div class="pro_img">
+            <img src="https://www.snitch.co.in/cdn/shop/files/Noir.jpg?v=1691769612&width=1800"
+                alt="">
+            <div class="overlay">
+              <img src="https://www.snitch.co.in/cdn/shop/files/4MSS2199-07-M69.jpg?v=1692177382"
+                  alt="" class="seimg">
+            </div>
+          </div>
+          <div class="desc">
+            <h2>NOIR CLUB</h2>
+            <h4>Rs. 1,199</h4>
+            <h4 class="outer">100ml</h4>
+          </div>
+        </div>
+        <div class="product_inner_wrapper" data-aos="fade-down">
+          <div class="pro_img">
+            <img
+                src="https://www.snitch.co.in/cdn/shop/files/CloseCall.jpg?v=1691679665&width=1800" alt="">
+            <div class="overlay">
+              <img
+                  src="https://www.snitch.co.in/cdn/shop/files/4MSS2199-07-M149.jpg?v=1691775881&width=1800" alt=""
+                  class="seimg">
+            </div>
+          </div>
+          <div class="desc">
+            <h2>CLOSE CALL</h2>
+            <h4>Rs. 1,199</h4>
+            <h4 class="outer">100ml</h4>
+          </div>
+        </div>
+        <div class="product_inner_wrapper" data-aos="fade-down">
+          <div class="pro_img">
+            <img src="https://www.snitch.co.in/cdn/shop/files/Savage.jpg?v=1691769600&width=1800"
+                alt="">
+            <div class="overlay">
+              <img
+                  src="https://www.snitch.co.in/cdn/shop/files/4MSS2199-07-M87.jpg?v=1691775914&width=1800" alt=""
+                  class="seimg">
+            </div>
+          </div>
+          <div class="desc">
+            <h2>SAVAGE</h2>
+            <h4>Rs. 1,199</h4>
+            <h4 class="outer">100ml</h4>
+          </div>
+        </div>
+        <div class="product_inner_wrapper" data-aos="fade-down">
+          <div class="pro_img">
+            <img
+                src="https://www.snitch.co.in/cdn/shop/files/Black_6a551343-f11f-4b30-8a16-d504bd4d5b7d.jpg?v=1691679629&width=1800"
+                alt="">
+            <div class="overlay">
+              <img
+                  src="https://www.snitch.co.in/cdn/shop/files/4MSS2199-07-M99.jpg?v=1691775866&width=1800" alt=""
+                  class="seimg">
+            </div>
+          </div>
+          <div class="desc">
+            <h2>BLACK</h2>
+            <h4>Rs. 1,199</h4>
+            <h4 class="outer">100ml</h4>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="view-btn">
+        <a href="shop.html">view all</a>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- five Producet section start -->
+  <div id="product_section2">
+    <div class="page_width">
+      <div class="header_title">
+        <h2>MOST TRENDING</h2>
+      </div>
+      <div class="Product_wrapper2">
+
+      </div>
+      <div class="view-btn hover-same">
+        <a href="shop.html">view all</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Six Producet section start -->
+  <div id="product_section3">
+    <div class="page_width">
+      <div class="header_title">
+        <h2>ALL CATEGORIES</h2>
+      </div>
+      <div class="Product_wrapper3">
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Customers Review Section Start -->
+  <div id="customer_section" class="">
+    <div class="page_width">
+      <div class="header_title">
+        <h2>OUR CUSTOMERS SPEAK FOR US</h2>
+      </div>
+      <div class="start">
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+      </div>
+      <div class="reviews_detail">
+        <span>from 14721 reviews</span>
+      </div>
+      <div class="swiper mySwiper ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide review_section">
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_23Oct21_2003_56x56.jpg?v=1666120853"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  
+                    <h4>Great product</h4>
+                  
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                </div>
+              </div>
+            </div>
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/ADS_4e2c3799-37e0-4de0-8957-93b1f245abdd_56x56.jpg?v=1650379023"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_May22_9809_56x56.jpg?v=1652809014"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_sep21_0679-1_b512493f-8968-499f-92cf-622aacc006bf_56x56.jpg?v=1655966193"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_7thAug21__2nd-folder4582_56x56.jpg?v=1650378777"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide review_section">
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_11Jan22_1295_56x56.jpg?v=1650379915"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_Feb3rd_22_1840_56x56.jpg?v=1650380031"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/ADS_4e2c3799-37e0-4de0-8957-93b1f245abdd_56x56.jpg?v=1650379023"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Untitled-Session-05009_56x56.jpg?v=1650379828"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/m_ea5240df-0266-46b6-967c-a51684a629ae_56x56.jpg?v=1650527777"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide review_section">
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/m_ea5240df-0266-46b6-967c-a51684a629ae_56x56.jpg?v=1650527777"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Untitled-Session-05009_56x56.jpg?v=1650379828"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/ADS_4e2c3799-37e0-4de0-8957-93b1f245abdd_56x56.jpg?v=1650379023"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_Feb3rd_22_1840_56x56.jpg?v=1650380031"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class=" review_wrapper">
+              <div class="imgwrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0420/7073/7058/products/Snitch_Nov30th21_8544_56x56.jpg?v=1650379518"
+                  alt="">
+              </div>
+              <div class="detail_section">
+                <div class="start1">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="descr1">
+                  <a href="">
+                    <h4>Great product</h4>
+                  </a>
+                  <a href="">
+                    <p>I recently purchased the most comfortable and stylish t-shirt, and I couldn't be happier with my
+                      choice! </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brand Ambassador Section Start -->
+  <div id="brand-back-img">
+    <div class="page_width">
+      <div class="backgourn-wrapper">
+        <img src="img/back4.webp" alt="back4">
+      </div>
+      <div class="backgourn-wrapper">
+        <img src="img/backmapimg.webp" alt="back4">
+      </div>
+      <div class="backgourn-wrapper">
+        <img src="img/backgold.webp" alt="back4">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section Start  -->
+  <div id="Footer-section">
+    <div class="page_width">
+      <footer>
+        <div class="flex_footer_div">
+          <div class="footer_contant1">
+            <ul>
+              <li><a href="#">flagship store now open</a></li>
+              <li><a href="#">bangalore: get Directions</a></li>
+            </ul>
+          </div>
+          <div class="footer_contant2">
+            <ul>
+              <li><a href="#">cantact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer_contant3">
+            <ul>
+              <li><a href="#">Place Returns request </a></li>
+              <li><a href="#">Returns policy</a></li>
+              <li><a href="#">Track your order</a></li>
+            </ul>
+          </div>
+          <div class="footer_contant4">
+            <ul>
+              <li><a href="#">Customer Care</a></li>
+              <li><a href="#">timings: 10 Am - 6:00 PM (Mon-Sat)</a></li>
+              <li title="6354728270"><a href="#">Call: +91 6354728270</a></li>
+              <li title="Sohan@gmail.com"><a href="#">E-mail: Sohan@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_sec_contant">
+          <h4 class="open_click_footer">Sign up and save</h4>
+          <div class="hide-footer">
+            <p>
+              sign up now and be the first to know about exclusive offers,
+              latest fashion trends & style tips!
+            </p>
+            <div class="input_div">
+              <form>
+                <input type="email" placeholder="Enter your email " required />
+                <input type="submit" value="subscribe" />
+              </form>
+            </div>
+            <div class="social_icon">
+              <a href="https://www.snitch.co.in/"><i class="ri-instagram-line"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-facebook-circle-fill"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-video-fill"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-twitter-fill"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-pinterest-fill"></i></a>
+              <a href="https://www.snitch.co.in/"><i class="ri-linkedin-fill"></i></a>
+            </div>
+          </div>
+          <p class="footer_text">
+            © 2023 SNITCH | All Rights Reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- corner btn -->
+  <a href="#"><button class="corner-btn"><i class="ri-arrow-up-s-line"></i></button></a>
+
+
+  <!-- main js  -->
+  <script src="JavaScript/main.js"></script>
+  <script src="JavaScript/singlepage.js"></script>
+  <script src="JavaScript/shop.js"></script>
+
+  <!-- swiper js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    // navigation button
+    //   var swiper1 = new Swiper(".mySwiper1", {
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+    // });
+  </script>
+
+  <!-- aos animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200, // offset (in px) from the original trigger point
+      delay: 0,
+    });
+  </script>
+
+  <!-- preloading effect  -->
+  <script>
+    let ldsRoller = document.getElementById('lds-roller');
+
+    function loading() {
+      ldsRoller.style.display = "none";
+    }
+
+    let ldsRollerInner = document.getElementById('lds-rollerInner');
+
+    function loadingInner() {
+      ldsRollerInner.style.display = "none";
+    }
+  </script>
+
+  <!-- <script>
+      // Sticky NavBar Scrolling Nav Bar
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("nav_section");
+        navbar.classList.toggle("nav_section_background", window.scrollY > 100);
+        // if (window.scrollY > 200) {
+        //   navbar.classList.add("nav_section_background");
+        //   navbar.classList.remove("nav_section_background2");
+        // } else {
+        //   navbar.classList.remove("nav_section_background");
+        //   navbar.classList.add("nav_section_background2");
+        // }
+      });
+
+      // SideBar Open and Close
+      const menu_bar = document.querySelector(".menu_bar");
+      const sideBarSection = document.querySelector(".side_bar_section");
+
+      menu_bar.addEventListener("click", () => toggleSidebar());
+
+      const toggleSidebar = () => {
+        // alert('Hello Sohan')
+        sideBarSection.classList.toggle("side_bar_section_active");
+        document.body.classList.toggle("bodyOverflow");
+      };
+
+
+      // Menu Bar Open and Close
+      const DownArrow = document.querySelector(".down_arrow");
+      const LinkList = document.querySelector(".LinkList");
+
+      DownArrow.addEventListener("click", () => toggleMenuBar());
+
+      const toggleMenuBar = () => {
+        // alert("hello sohan")
+        LinkList.classList.toggle("LinkList_active");
+        DownArrow.classList.toggle("ri-arrow-up-s-line");
+      };
+
+      // second Menu bar open 
+      // const InnerArrow = document.querySelector('.inner_arrow');
+      // const LinkListOne = document.querySelector('.LinkList_one');
+
+      // InnerArrow.addEventListener("click", () => secondtoggleMenu());
+
+      // const secondtoggleMenu = () =>{
+      //   // alert("Sohan")
+      //   LinkListOne.classList.toggle("LinkList_one_active");
+      //   InnerArrow.classList.toggle("ri-arrow-up-s-line")
+      // }
+
+      function Toggle(id){
+        let LINkLIStOpen = document.getElementById(id);
+        LINkLIStOpen.classList.toggle("LinkList_one_active")
+        
+      }
+      function change(div){
+        const InnerArrow = document.getElementById(div);
+        InnerArrow.classList.toggle("ri-arrow-up-s-line")
+      }
+       
+    </script> -->
+</body>
+
+</html>
